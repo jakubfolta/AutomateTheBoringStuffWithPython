@@ -1,3 +1,4 @@
+#Chapter 3
 #Keyword arguments and print
 
 print('Hello')
@@ -41,11 +42,61 @@ spam()
 
 print(eggs)
 
+#Local and global variables with the same name
+#The global statement
+def spam():
+    global eggs
+    eggs = 'spam'
 
+eggs = 'global'
 
+spam()
 
+print(eggs)
 
+def spam():
+    global eggs
+    eggs = 'spam'
 
+def bacon():
+    eggs = 'bacon'
+
+def ham():
+    print(eggs)
+
+eggs = 45
+
+spam()
+
+print(eggs)
+
+#Exception handling
+
+def spam(divideBy):
+    return 43 / divideBy
+
+print(spam(2))
+print(spam(34))
+#print(spam(0)) #cause an error
+print(spam(1))
+
+def spam(divideBy):
+    try:
+        return 43 / divideBy
+    except ZeroDivisionError:
+        print('Error: Invalid argument.')
+
+print(spam(2))
+print(spam(34))
+print(spam(0))
+print(spam(1))
+
+#Practice projects
+#The collatz sequence
+
+def collatz(number):
+    pass
+    
 
 
 
