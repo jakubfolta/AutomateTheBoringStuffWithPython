@@ -95,7 +95,16 @@ print(spam(1))
 #The collatz sequence
 
 def collatz(number):
-    pass
+    if number % 2 == 0:
+      return print(number // 2)
+      
+    else:
+        return print(3 * number + 1)
+
+
+number = int(input('Enter the number: '))
+
+collatz(number)
     
 
 
