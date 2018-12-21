@@ -95,17 +95,7 @@ print(spam(1))
 #The collatz sequence
 
 def collatz(number):
-    while number == 1:
-        if number % 2 == 0:
-            print(number // 2)
-            return (number // 2)
-            continue
-        elif number % 2 != 0:
-            print(3 * number + 1)
-            return (3 * number + 1)
-            continue
-    else:
-        print(number)
+   
 
 
 
