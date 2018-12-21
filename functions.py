@@ -101,37 +101,20 @@ def collatz(number):
         return number // 2
 
     else:
-        print(3 * number +1)
+        print(3 * number + 1)
         return 3 * number + 1
-    
         
 try:
-    enteredNumber = int(input('Enter the number: '))
+    enteredNumber = input('Enter the number: ')
 
 except ValueError:
     print('Please enter a number!')
 
-while collatz(enteredNumber) != 1:
-    enteredNumber = collatz(enteredNumber)
+while enteredNumber != 1:
+    enteredNumber = collatz(int(enteredNumber))
     
 
 
-
-
-def collatz(number):
-
-    if number % 2 == 0:
-        print(number // 2)
-        return number // 2
-
-    elif number % 2 == 1:
-        result = 3 * number + 1
-        print(result)
-        return result
-
-n = input("Give me a number: ")
-while n != 1:
-    n = collatz(int(n))
 
 
 
