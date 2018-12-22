@@ -1,5 +1,9 @@
 import time
 
+print('Hi there, this program will explore what\'s called "Collatz Sequence". What\'s funny, even mathematicians aren\'t sure why it works!')
+print()
+time.sleep(2)
+
 def checkOddOrEvenNumber(number):
     if number % 2 == 0:
         print(number // 2)
@@ -24,3 +28,6 @@ while play == 'yes' or play == 'y':
      
 else:
     print('Alright, see you next time.')
+
+time.sleep(2)
+exit()
