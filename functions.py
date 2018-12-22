@@ -113,18 +113,3 @@ except ValueError:
 while enteredNumber != 1:
     enteredNumber = collatz(int(enteredNumber))
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
