@@ -14,7 +14,7 @@ while play == 'yes' or play == 'y':
     try:
         enteredNumber = input('Enter some number: ')
         while enteredNumber != 1:
-            enteredNumber = checkOddOrEvenNumber(enteredNumber)
+            enteredNumber = checkOddOrEvenNumber(int(enteredNumber))
         else:
             print('Great! Collatz sequence works!\n')
     except ValueError:
@@ -22,3 +22,5 @@ while play == 'yes' or play == 'y':
 
     play = input('Do you want to check another number? yes/no: ')
      
+else:
+    print('Alright, see you next time.')
