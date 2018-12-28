@@ -10,3 +10,8 @@ print(spam[1])
 print(spam[2])
 
 print('The ' + spam[2] + ' ate the ' + spam[0] + '.')
+
+spam = [['cat', 'bat', 'rat'],[20, 45, 56, 67]]
+
+print(spam[0])
+print(spam[1][3])
