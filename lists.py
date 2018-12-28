@@ -15,3 +15,6 @@ spam = [['cat', 'bat', 'rat'],[20, 45, 56, 67]]
 
 print(spam[0])
 print(spam[1][3])
+#Negative indexes
+spam = ['cat', 'bat', 'rat', 'elephant']
+print(spam[-1])
