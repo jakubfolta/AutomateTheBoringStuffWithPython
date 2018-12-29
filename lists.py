@@ -30,4 +30,8 @@ print(spam[:])
 #List's length with len()
 spam = ['cat', 'dog', 'moose']
 print(len(spam))
-
+#Changing values in a list with indexes 
+spam = ['cat', 'bat', 'rat', 'elephant']
+print(spam)
+spam[1] = 'aardvark'
+print(spam)
