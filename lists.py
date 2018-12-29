@@ -40,8 +40,12 @@ print(spam)
 spam[-1] = 1234
 print(spam)
 #Lists concatenation and replication
-
-
+spam = [1, 2, 3]
+bacon = ['cat', 'dog', 'rat']
+spamBacon = spam + bacon
+print(spamBacon)
+spam = spam * 3
+print(spam)
 
 
 
