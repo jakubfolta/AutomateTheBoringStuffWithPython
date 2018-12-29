@@ -64,6 +64,8 @@ while True:
 print('The cat names are: ')
 for x in catNames:
     print('    ' + x)
+#Using for loops with lists
+    
 
 
 
