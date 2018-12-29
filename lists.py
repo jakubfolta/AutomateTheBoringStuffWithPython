@@ -19,3 +19,4 @@ print(spam[1][3])
 spam = ['cat', 'bat', 'rat', 'elephant']
 print(spam[-1])
 print('The ' + spam[-1] + ' is afraid of the ' + spam[-3] + '.')
+#Getting sublists with slices
