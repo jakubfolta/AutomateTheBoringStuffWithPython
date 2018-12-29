@@ -27,4 +27,7 @@ print(spam[0:-1])
 print(spam[:4])
 print(spam[0:])
 print(spam[:])
+#List's length with len()
+spam = ['cat', 'dog', 'moose']
+print(len(spam))
 
