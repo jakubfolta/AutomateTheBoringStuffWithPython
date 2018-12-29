@@ -39,6 +39,8 @@ spam[2] = spam[1]
 print(spam)
 spam[-1] = 1234
 print(spam)
+#Lists concatenation and replication
+
 
 
 
