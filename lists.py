@@ -46,6 +46,12 @@ spamBacon = spam + bacon
 print(spamBacon)
 spam = spam * 3
 print(spam)
+#Removing values from a list with del statements
+spam = ['cat', 'bat', 'rat', 'elephant']
+del spam[2]
+print(spam)
+del spam[2]
+print(spam)
 
 
 
