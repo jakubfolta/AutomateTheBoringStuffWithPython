@@ -67,7 +67,10 @@ for x in catNames:
 #Using for loops with lists
 for i in range(4):
     print(i)
-    
+
+supplies = ['pens', 'staplers', 'flame-thrower', 'binder']
+for i in range(len(supplies)):
+    print('Index ' + str(i) + ' in supplies is a ' + supplies[i] + '.')
     
 
 
