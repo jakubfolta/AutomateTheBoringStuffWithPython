@@ -101,7 +101,9 @@ spam = 44
 spam += 2
 print(spam)
 
-    
+spam = 'Hello'
+spam += 'World!'
+print(spam)
 
 
 
