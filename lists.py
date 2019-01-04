@@ -102,7 +102,11 @@ spam += 2
 print(spam)
 
 spam = 'Hello'
-spam += 'World!'
+spam += ' World!'
+print(spam)
+
+spam = ['Zophie']
+spam *= 3
 print(spam)
 
 
