@@ -83,6 +83,10 @@ if name not in myPets:
     print('I do not have pet named ' + name + '.')
 else:
     print(name + ' is my pet.')
+#The multiple assignment trick
+cat = ['fat', 'orange', 'loud']
+size, color, disposition = cat
+print(size)
     
 
 
