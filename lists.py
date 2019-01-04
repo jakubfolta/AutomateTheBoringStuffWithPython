@@ -145,8 +145,32 @@ spam.sort()
 print(spam)
 spam.sort(key = str.lower)
 print(spam)
+#Example program: Magic 8 ball with a list
+import random
 
+messages = ['It is certain',
+    'It is decidedly so',
+    'Yes definitely',
+    'Reply hazy try again',
+    'Ask again later',
+    'Concentrate and ask again',
+    'My reply is no',
+    'Outlook not so good',
+    'Very doubtful']
+print(messages[random.randint(0, len(messages) - 1)])
 
+print('Four score and seven ' + \
+      'years ago...')
+#List-like types: Strings and Tuples 
+name = 'Zophie'
+print(name[0])
+print(name[-2])
+print(name[0:3])
+print('Zo' in name)
+
+for i in name:
+    print('***' + i + '***')
+    
 
 
 
