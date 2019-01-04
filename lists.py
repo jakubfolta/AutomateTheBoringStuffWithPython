@@ -95,6 +95,11 @@ print(a)
 #Augmented assignment operators
 spam = 42
 spam = spam + 1
+print(spam)
+
+spam = 44
+spam += 2
+print(spam)
 
     
 
