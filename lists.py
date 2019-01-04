@@ -129,8 +129,10 @@ spam.remove('bat')
 print(spam)
 del spam[0]
 print(spam)
-
-
+#Sorting the values in a list with the sort() method
+spam = [1, 3, 5, 65, 23, 54, 46, 233, 6]
+spam.sort()
+print(spam)
 
 
 
