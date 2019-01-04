@@ -111,7 +111,12 @@ print(spam)
 #Methods
 spam = ['hello', 'hi', 'howdy']
 print(spam.index('hello'))
-print(spam.index('heyas'))
+#print(spam.index('heyas'))
+
+spam = ['Zophie', 'Pooka', 'Elvis', 'Pooka']
+print(spam.index('Pooka')) # first appearance
+#Adding values to lists with the append() and insert() methods
+
 
 
 
