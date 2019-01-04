@@ -122,6 +122,11 @@ print(spam)
 spam = ['cat', 'dog', 'bat']
 spam.insert(1, 'moose')
 print(spam)
+#Removing values from lists with remove()
+spam = ['cat', 'bat', 'rat']
+print(spam)
+spam.remove('bat')
+print(spam)
 
 
 
