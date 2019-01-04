@@ -108,6 +108,11 @@ print(spam)
 spam = ['Zophie']
 spam *= 3
 print(spam)
+#Methods
+spam = ['hello', 'hi', 'howdy']
+print(spam.index('hello'))
+print(spam.index('heyas'))
+
 
 
 
