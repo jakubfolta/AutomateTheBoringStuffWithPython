@@ -93,7 +93,8 @@ a, b = b, a
 
 print(a)
 #Augmented assignment operators
-
+spam = 42
+spam = spam + 1
 
     
 
