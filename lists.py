@@ -134,6 +134,17 @@ spam = [1, 3, 5, 65, 23, 54, 46, 233, 6]
 spam.sort()
 print(spam)
 
+spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
+spam.sort()
+print(spam)
+spam.sort(reverse = True)
+print(spam)
+
+spam = ['Alice', 'ants', 'Bob', 'cat', 'Rogers']
+spam.sort()
+print(spam)
+spam.sort(key = str.lower)
+print(spam)
 
 
 
