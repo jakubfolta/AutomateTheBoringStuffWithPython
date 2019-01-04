@@ -72,7 +72,7 @@ supplies = ['pens', 'staplers', 'flame-thrower', 'binder']
 for i in range(len(supplies)):
     print('Index ' + str(i) + ' in supplies is a ' + supplies[i] + '.')
 #The in and not in operators
-
+print('howdy' in ['hello', 'hi', 'howdy', 'heyas'])
     
 
 
