@@ -214,8 +214,14 @@ cheese[1] = 'Hello!'
 print(spam)
 print(cheese)
 #Passing references
+def eggs(someParameter):
+    someParameter.append('Hello')
 
-
+spam = [1, 2, 3]
+print(spam)
+eggs(spam)
+print(spam)
+#The copy module's copy() and deepcopy() functions
 
 
 
