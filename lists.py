@@ -202,8 +202,11 @@ print(type(('hello')))
 print(tuple(['cat', 'dog', 5]))
 print(list(('cat', 'dog', 5)))
 #References
-
-
+spam = 42
+cheese = spam
+spam = 288
+print(spam)
+print(cheese)
 
 
 
