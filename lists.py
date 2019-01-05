@@ -222,7 +222,12 @@ print(spam)
 eggs(spam)
 print(spam)
 #The copy module's copy() and deepcopy() functions
-
+import copy
+spam = ['a', 'b', 'c', 'd']
+cheese = copy.copy(spam)
+cheese[1] = 42
+print(spam)
+print(cheese)
 
 
 
