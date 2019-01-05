@@ -232,7 +232,10 @@ spam.append(['hello', 'cat', 'dog', [1, 3, 4, [3, 5, 6]]])
 print(spam)
 eggs = copy.deepcopy(spam)
 print(eggs)
-
+#Practice questions
+spam = [2, 4, 5, 6, 10]
+spam[2] = 'hello'
+print(spam)
 
 
 
