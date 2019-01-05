@@ -184,6 +184,13 @@ print(eggs)
 eggs = [1, 2, 4]
 print(eggs)
 del eggs[0]
+del eggs[1]
+del eggs[0]
+
+eggs.append(4)
+eggs.append(5)
+eggs.append(6)
+print(eggs)
 
 
 
