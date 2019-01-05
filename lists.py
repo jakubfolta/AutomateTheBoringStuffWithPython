@@ -228,6 +228,10 @@ cheese = copy.copy(spam)
 cheese[1] = 42
 print(spam)
 print(cheese)
+spam.append(['hello', 'cat', 'dog', [1, 3, 4, [3, 5, 6]]])
+print(spam)
+eggs = copy.deepcopy(spam)
+print(eggs)
 
 
 
