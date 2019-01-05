@@ -196,6 +196,9 @@ eggs = ('hello', 4, 5.4)
 print(eggs[0])
 print(eggs[1])
 
+print(type(('hello',)))
+print(type(('hello')))
+
 
 
 
