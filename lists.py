@@ -208,6 +208,9 @@ spam = 288
 print(spam)
 print(cheese)
 
+spam = [1, 2, 3, 4, 5]
+cheese = spam
+
 
 
 
