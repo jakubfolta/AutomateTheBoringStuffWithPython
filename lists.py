@@ -192,7 +192,9 @@ eggs.append(5)
 eggs.append(6)
 print(eggs)
 #The tuple data type
-
+eggs = ('hello', 4, 5.4)
+print(eggs[0])
+print(eggs[1])
 
 
 
