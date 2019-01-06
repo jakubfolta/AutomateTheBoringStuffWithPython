@@ -7,9 +7,9 @@ def convertListToString(argument):
             convertedArgument += 'and ' + x
         else:
             convertedArgument += x + ', '
-    print(type(convertedArgument))
-    return convertedArgument
+    
+    print(convertedArgument)
 
-print(convertListToString(spam))
+convertListToString(spam)
 
     
