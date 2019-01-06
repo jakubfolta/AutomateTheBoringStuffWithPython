@@ -1,15 +1,15 @@
-spam = ['apples', 'bananas', 'tofu', 'cats']
+spam = ['apples', 'bananas', 5, 'tofu', 'cats', 2]
 
 def convertListToString(argument):
     convertedArgument = ''
     for x in argument:
         if x == argument[len(argument) - 1]:
-            convertedArgument += 'and ' + x
+            convertedArgument += 'and ' + str(x)
         else:
-            convertedArgument += x + ', '
+            convertedArgument += str(x) + ', '
     
-    print(convertedArgument)
+    return convertedArgument
 
-convertListToString(spam)
+print(convertListToString(spam))
 
     
