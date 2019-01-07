@@ -11,9 +11,11 @@ grid = [['.', '.', '.', '.', '.', '.'],
 rows = len(grid)
 cols = len(grid[0])
 def printTheImageFromGrid(argument):
-    for x in range(rows):
-        for y in range(cols):
-            print(grid[x][y])
+    for x in range(cols):
+        for y in range(rows):
+            print(grid[y][x], end = '')
+        print()
+            
         
         
         
