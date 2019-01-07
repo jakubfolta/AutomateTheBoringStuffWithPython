@@ -10,7 +10,10 @@ grid = [['.', '.', '.', '.', '.', '.'],
 
 def printTheImageFromGrid(argument):
     for x in argument:
-        print(x[0][0])
+        print(x[0])
+        
+        
+        
 
 
 printTheImageFromGrid(grid)
