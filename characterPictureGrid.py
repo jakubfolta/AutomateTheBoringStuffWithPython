@@ -16,11 +16,6 @@ def printTheImageFromGrid(argument):
             print(grid[y][x], end = '')
         print()
             
-        
-        
-        
-
-
 printTheImageFromGrid(grid)
         
     
