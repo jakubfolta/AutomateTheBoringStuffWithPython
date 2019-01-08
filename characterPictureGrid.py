@@ -22,7 +22,10 @@ printTheImageFromGrid(grid)
 def printPictureFromGrid(argument):
     for x in range(6):
         for y in range(9):
-            print(argument[y][x])
+            print(argument[y][x], end = '')
+
+
+printPictureFromGrid(grid)
         
     
 
