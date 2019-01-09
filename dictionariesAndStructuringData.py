@@ -45,6 +45,8 @@ print('Zophie' in spam.values())
 
 print('color' in spam.keys())
 
+print('color' not in spam.keys())
+
 
 
 
