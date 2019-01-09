@@ -14,7 +14,7 @@ eggs = {'name': 'Zophie', 'species': 'cat'}
 ham = {'species': 'cat', 'name': 'Zophie'}
 print(eggs == ham)
 #The keys(), values() and items() methods
-spam = {'color': 'red', 'age': '32'}
+spam = {'color': 'red', 'age': 32}
 
 for v in spam.values():
     print(v)
@@ -24,5 +24,11 @@ for k in spam.keys():
 
 for i in spam.items():
     print(i)
+
+for i in spam.items():
     print(list(i))
+
+for x, y in spam.items():
+    print('Key: ' + x + ' Value: ' + str(y))
+    
 
