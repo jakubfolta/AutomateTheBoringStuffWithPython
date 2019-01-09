@@ -37,7 +37,9 @@ for x, y in spam.items():
 
 #Checking whether a key or value exists in a dictionary
 
+spam = {'name': 'Zophie', 'age': 7}
 
+print('name' in spam.keys())
 
 
 
