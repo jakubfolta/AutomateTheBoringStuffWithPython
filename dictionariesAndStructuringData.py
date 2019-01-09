@@ -47,6 +47,7 @@ print('color' in spam.keys())
 
 print('color' not in spam.keys())
 
+#The get() method
 
 
 
