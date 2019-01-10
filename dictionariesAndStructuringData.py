@@ -67,6 +67,12 @@ print(spam)
 spam.setdefault('color', 'black')
 print(spam)
 
+spam = {'name': 'Pooka', 'age': 4}
+print(spam)
+spam.setdefault('color', 'black')
+print(spam)
+
+
 
 
 
