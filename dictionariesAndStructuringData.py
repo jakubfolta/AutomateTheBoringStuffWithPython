@@ -71,6 +71,10 @@ spam = {'name': 'Pooka', 'age': 4}
 print(spam)
 spam.setdefault('color', 'black')
 print(spam)
+print(spam.setdefault('color', 'white'))
+
+#Pretty printing
+
 
 
 
