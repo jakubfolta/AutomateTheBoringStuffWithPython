@@ -1,4 +1,7 @@
+birthdayFile = open('FriendsFamilyBirthdays.txt', 'w')
 birthdays = {'Alice': 'Apr 1', 'Bob': 'Dec 12', 'Carol': 'Mar 4'}
+birthdayFile.write(str(birthdays))
+
 
 while True:
     print('Enter a name to check: (blank to quit)')
@@ -14,4 +17,6 @@ while True:
         birthdays[name] = bday
         print('Birthday database updated.')
 
-    exit()
+birthdayFile.close()
+
+exit()
