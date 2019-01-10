@@ -9,7 +9,7 @@ while True:
     if name == '':
         break
     if name in birthdays:
-        print(birthdays[name] + 'is the birthaday of ' + name + '.')
+        print(birthdays[name] + ' is the birthaday of ' + name + '.')
     else:
         print('I don\'t have birthday info of ' + name + '.')
         print('What is their birthday?')
