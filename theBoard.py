@@ -9,5 +9,13 @@ def printTheBoard(board):
     print('-+-+-')
     print(theBoard['low-L'] + theBoard['low-M'] + theBoard['low-R'])
     print('+|+|+')
+
+turn = 'X'
+for x in range(9):
+    printTheBoard(theBoard)
+    print('Turn for ' + turn + '. Move on which space')
+    move = input()
+    theBoard[move] = turn
     
+
 
