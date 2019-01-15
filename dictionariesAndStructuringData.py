@@ -97,17 +97,18 @@ allGuests = {'Alice': {'apples': 5, 'pretzels': 12},
 
 def totalBrought(guests, item):
     numBrought = 0
-    for x, y in guests.item():
-        print(x, y)
+    for x, y in guests.items():
         numBrought = numBrought + y.get(item, 0)
     return numBrought
 
 print('Number of things beeing brought: ')
-print(' - Apples ' + str())
+print(' - Apples ' + str(totalBrought(allGuests, 'apples')))
+print(' - Cups ' + str(totalBrought(allGuests, 'cups')))
+print(' - Cakes ' + str(totalBrought(allGuests, 'cakes')))
+print(' - Ham sandwiches ' + str(totalBrought(allGuests, 'ham sandwiches')))
+print(' - Apple pies ' + str(totalBrought(allGuests, 'apple pies')))
+print(' - Bananas ' + str(totalBrought(allGuests, 'bananas')))
 
-
-
-totalBrought()
 
 
 
