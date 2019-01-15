@@ -89,9 +89,25 @@ for x in message:
 pprint.pprint(count)
 
 #Using data structures to model real-world things
+#Nested dictionaries and lists
+
+allGuests = {'Alice': {'apples': 5, 'pretzels': 12},
+              'Bob': {'ham sandwiches': 3, 'apples': 2},
+              'Carol': {'cups': 3, 'apples pies': 1}}
+
+def totalBrought(guests, item):
+    numBrought = 0
+    for x, y in guests.item():
+        print(x, y)
+        numBrought = numBrought + y.get(item, 0)
+    return numBrought
+
+print('Number of things beeing brought: ')
+print(' - Apples ' + str())
 
 
 
+totalBrought()
 
 
 
