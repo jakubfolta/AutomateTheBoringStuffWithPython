@@ -115,10 +115,18 @@ allGuests = {'Alice': {'apple': 5, 'pretzels': 12},
              'Carol': {'cups': 3, 'apple pies': 1}}
 
 def countTotalDelivery(people, item):
-    totalSelectedItems = 0
+    totalSelectedItem = 0
     for x, y in people.items():
-        totalSelectedItems = totalSelectedItems + y.get(item, 0)
+        totalSelectedItem = totalSelectedItem + y.get(item, 0)
     return totalItems
+
+def countTotalItems(guests):
+    totalItems = 0
+    for k, v in guests.items():
+        totalItems = totalItems + y
+    return totalItems
+
+print('Total items brought: ' + str(countTotalItems(allGuests)))
     
 
 
