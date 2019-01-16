@@ -110,7 +110,7 @@ print(' - Apple pies ' + str(totalBrought(allGuests, 'apple pies')))
 print(' - Bananas ' + str(totalBrought(allGuests, 'bananas')))
 
 
-allGuests = {'Alice': {'apple': 5, 'pretzels': 12},
+allGuests = {'Alice': {'apples': 5, 'pretzels': 12},
              'Bob': {'ham sandwiches': 3, 'apples': 2},
              'Carol': {'cups': 3, 'apple pies': 1}}
 
@@ -118,15 +118,29 @@ def countTotalDelivery(people, item):
     totalSelectedItem = 0
     for x, y in people.items():
         totalSelectedItem = totalSelectedItem + y.get(item, 0)
-    return totalItems
+    return totalSelectedItem
 
 def countTotalItems(guests):
     totalItems = 0
-    for k, v in guests.items():
-        totalItems = totalItems + y
+    for x in guests.values():
+        #y = list(y)
+        
+        print(x.values())
+        #totalItems = totalItems + y.values()
     return totalItems
 
-print('Total items brought: ' + str(countTotalItems(allGuests)))
+print()
+print('ITEMS BROUGHT TO PARTY: ')
+print()
+print('Apples ' + str(countTotalDelivery(allGuests, 'apples')))
+print('Pretzels ' + str(countTotalDelivery(allGuests, 'pretzels')))
+print('Ham sandwiches ' + str(countTotalDelivery(allGuests, 'ham sandwiches')))
+print('Cups ' + str(countTotalDelivery(allGuests, 'cups')))
+print('Apple pies ' + str(countTotalDelivery(allGuests, 'apple pies')))
+print()
+#print('Total items brought: ' + str(countTotalItems(allGuests)))
+
+countTotalItems(allGuests)
     
 
 
