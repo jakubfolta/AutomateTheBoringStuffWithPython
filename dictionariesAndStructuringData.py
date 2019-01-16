@@ -110,6 +110,11 @@ print(' - Apple pies ' + str(totalBrought(allGuests, 'apple pies')))
 print(' - Bananas ' + str(totalBrought(allGuests, 'bananas')))
 
 
+allGuests = {'Alice': {'apple': 5, 'pretzels': 12},
+             'Bob': {'ham sandwiches': 3, 'apples': 2},
+             'Carol': {'cups': 3, 'apple pies': 1}}
+
+
 
 
 
