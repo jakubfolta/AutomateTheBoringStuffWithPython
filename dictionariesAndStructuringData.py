@@ -114,6 +114,13 @@ allGuests = {'Alice': {'apple': 5, 'pretzels': 12},
              'Bob': {'ham sandwiches': 3, 'apples': 2},
              'Carol': {'cups': 3, 'apple pies': 1}}
 
+def countTotalDelivery(people, item):
+    totalItems = 0
+    for x, y in people.items():
+        totalItems = totalItems + y.get(item, 0)
+    
+
+
 
 
 
