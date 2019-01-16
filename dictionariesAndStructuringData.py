@@ -125,7 +125,7 @@ def countTotalItems(guests):
     for x in guests.values():
         #y = list(y)
         
-        print(x.values())
+        print(x)
         #totalItems = totalItems + y.values()
     return totalItems
 
