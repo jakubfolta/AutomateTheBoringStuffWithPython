@@ -118,6 +118,7 @@ def countTotalDelivery(people, item):
     totalItems = 0
     for x, y in people.items():
         totalItems = totalItems + y.get(item, 0)
+    return totalItems
     
 
 
