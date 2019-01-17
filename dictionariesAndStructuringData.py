@@ -123,9 +123,10 @@ def countTotalDelivery(people, item):
 def countTotalItems(guests):
     totalItems = 0
     for x in guests.values():
+        for y in x.values():
         #y = list(y)
         
-        print(x)
+            print(y)
         #totalItems = totalItems + y.values()
     return totalItems
 
