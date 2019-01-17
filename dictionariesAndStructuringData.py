@@ -125,8 +125,6 @@ def countTotalItems(guests):
     for x in guests.values():
         for y in x.values():
             totalItems += y
-            print(y)
-            print(totalItems)
     return totalItems
 
 print()
@@ -138,9 +136,8 @@ print('Ham sandwiches ' + str(countTotalDelivery(allGuests, 'ham sandwiches')))
 print('Cups ' + str(countTotalDelivery(allGuests, 'cups')))
 print('Apple pies ' + str(countTotalDelivery(allGuests, 'apple pies')))
 print()
-#print('Total items brought: ' + str(countTotalItems(allGuests)))
+print('Total items brought: ' + str(countTotalItems(allGuests)))
 
-countTotalItems(allGuests)
     
 
 
