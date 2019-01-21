@@ -19,42 +19,11 @@ def addToInventory(inventory, addedItems):
 inv = {'gold coin': 42, 'rope': 1}
 dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
 print()
-print(inv)
+print('Actual inventory: ', inv)
+print()
 inv = addToInventory(inv, dragonLoot)
-print('Found in dragon\'s den...')
+print('Found in dragon\'s den...: ', dragonLoot)
+print()
+print('Updated inventory: ', inv)
+print()
 displayInventory(inv)
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-'''
-    print('Inventory: ')
-    totalItems = 0
-    for k, v in inventory.items():
-        print(str(v) + ' ' + k)
-        totalItems = totalItems + v
-    print('Total number of items: ' + str(totalItems))
-
-displayInventory(stuff)
-
-
-
-    for x in addedItems:
-        inventory.setdefault(x, 0)
-        inventory[x] += 1
-    return inventory'''
