@@ -7,8 +7,13 @@ def displayInventory(inventory):
         print(str(v) + ' ' + k)
         totalItems += v
     print('Total number of items:' + str(totalItems))
+
+displayInventory(stuff)
+    
 def addToInventory(inventory, addedItems):
-    pass
+    for x in addedItems:
+        inventory.setdefault
+    
         
 
 inv = {'gold coin': 42, 'rope': 1}
