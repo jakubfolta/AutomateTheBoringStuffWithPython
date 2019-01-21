@@ -14,6 +14,8 @@ displayInventory(stuff)
 def addToInventory(inventory, addedItems):
     for x in addedItems:
         inventory.setdefault(x, 0)
+        inventory[x] += 1
+    
         
 
 inv = {'gold coin': 42, 'rope': 1}
