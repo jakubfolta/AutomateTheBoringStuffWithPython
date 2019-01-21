@@ -9,3 +9,11 @@ def displayInventory(inventory):
     print('Total number of items: ' + str(totalItems))
 
 displayInventory(stuff)
+
+
+dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
+
+def addToInventory(inventory, addedItems):
+    for x in addedItems
+
+
