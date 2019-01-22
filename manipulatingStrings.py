@@ -66,3 +66,17 @@ print(spam)
 print(spam.lower())
 print(spam)
 
+print('How are you?')
+feeling = input()
+if feeling.lower() == 'great':
+    print('I feel great too!')
+else:
+    print('I hope the rest of your day is good.')
+
+print(spam.islower())
+print(spam.isupper())
+print('HELLO'.isupper())
+
+print('Hello'.upper())
+print('Hello'.upper().lower().upper())
+print('Hello'.lower().islower())
