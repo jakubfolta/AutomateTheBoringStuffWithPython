@@ -48,3 +48,21 @@ print(spam[6:])
 fizz = spam[0:5]
 print(fizz)
 print(spam)
+
+#The in and not in operators with strings
+
+print('Hello' in 'Hello world')
+print('HELLO' in 'Hello world!')
+
+#Useful string methods
+
+spam = 'Hello world'
+spam = spam.upper()
+print(spam)
+spam = spam.lower()
+print(spam)
+spam = spam.title()
+print(spam)
+print(spam.lower())
+print(spam)
+
