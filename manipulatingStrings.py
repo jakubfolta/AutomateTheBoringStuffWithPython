@@ -80,3 +80,10 @@ print('HELLO'.isupper())
 print('Hello'.upper())
 print('Hello'.upper().lower().upper())
 print('Hello'.lower().islower())
+
+#The isx string methods
+
+print('hello'.isalpha())
+print('hello123'.isalpha())
+print('hello123'.isalnum())
+print('hello'.isalnum())
