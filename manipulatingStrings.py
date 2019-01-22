@@ -35,3 +35,11 @@ explain what the spam() function does.'''
     print('Hello!')
 
 spam()
+
+#Indexing and slicing integers
+
+spam = 'Hello world!'
+print(spam[0])
+print(spam[4])
+print(spam[-1])
+print(spam[0:5])
