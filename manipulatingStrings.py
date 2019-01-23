@@ -96,8 +96,10 @@ print('This Is Title Case'.istitle())
 print('Hello world!'.startswith('Hello'))
 print('Hello world!'.endswith('world!'))
 
+#The join() and split() string methods
 
-
+print(', '.join(['cats', 'rats', 'bats']))
+print('ABC'.join(['My', 'name', 'is', 'Simon.']))
 
 
 
