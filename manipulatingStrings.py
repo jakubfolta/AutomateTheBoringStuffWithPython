@@ -90,3 +90,35 @@ print('hello'.isalnum())
 print('123'.isdecimal())
 print('   '.isspace())
 print('This Is Title Case'.istitle())
+
+#The startswith() and endswith() string methods
+
+print('Hello world!'.startswith('Hello'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
