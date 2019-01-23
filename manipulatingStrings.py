@@ -123,6 +123,36 @@ print('Hello'.ljust(20))
 print('Hello'.rjust(20, '*'))
 print('Hello'.ljust(10, '-'))
 
+print('Hello'.center(20))
+
+#Removing whitespace with strip(), rstrip(), and lstrip()
+
+spam = '       Hello world       '
+print(spam)
+print(spam.strip())
+print(spam.rstrip())
+
+spam = 'SpamSpamBaconEggsSpamEggsSpamSpam'
+print(spam.strip('ampS'))
+
+#Copying and pasting strings with the pyperclip module
+
+import pyperclip
+pyperclip.copy('Hello world!')
+print(pyperclip.paste())
+
+#Project: password locker
+
+
+
+
+
+
+
+
+
+
+
 
 
 
