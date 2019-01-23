@@ -94,6 +94,7 @@ print('This Is Title Case'.istitle())
 #The startswith() and endswith() string methods
 
 print('Hello world!'.startswith('Hello'))
+print('Hello world!'.endswith('world!'))
 
 
 
