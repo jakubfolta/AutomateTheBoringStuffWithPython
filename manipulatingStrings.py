@@ -101,8 +101,7 @@ print('Hello world!'.endswith('world!'))
 print(', '.join(['cats', 'rats', 'bats']))
 print('ABC'.join(['My', 'name', 'is', 'Simon.']))
 
-
-
+print('My name is Simon.'.split())
 
 
 
