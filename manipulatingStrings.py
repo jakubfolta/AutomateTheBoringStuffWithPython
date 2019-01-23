@@ -118,9 +118,10 @@ print(spam.split('\n'))
 #Justifying text with rjust(), ljust(), and center()
 
 print('Hello'.rjust(10))
-print('"Hello"'.ljust(20))
+print('Hello'.ljust(20))
 
-
+print('Hello'.rjust(20, '*'))
+print('Hello'.ljust(10, '-'))
 
 
 
