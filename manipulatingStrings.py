@@ -144,6 +144,8 @@ pyperclip.copy('Hello world!')
 print(pyperclip.paste())
 
 #Project: password locker
+#Step 1: Program design and data structures
+
 
 
 
