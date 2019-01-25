@@ -7,3 +7,6 @@
 Passwords = {'email': 'fdwfrevrvfd',
              'blog': 'fwrfervkn3475ygvnf',
              'luggage': 'weih78238dehw8'}
+
+import sys
+if len (sys.argv)
