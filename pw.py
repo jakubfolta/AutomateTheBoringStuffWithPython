@@ -3,3 +3,7 @@
 
 #! python 3
 # pw.py - An insecure password locker program
+
+Passwords = {'email': 'fdwfrevrvfd',
+             'blog': 'fwrfervkn3475ygvnf',
+             'luggage': 'weih78238dehw8'}
