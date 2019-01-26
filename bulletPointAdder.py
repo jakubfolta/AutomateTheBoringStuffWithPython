@@ -3,15 +3,20 @@
 #of each line of text on the clipboard.
 
 import pyperclip
+
 text = pyperclip.paste()
+print(text)
 text = text.split('\n')
 print(text)
 modifiedText = ''
 
+#Seperate lines and add stars.
+
 for x in text:
-    modifiedText += '* ' + x + '\n'
+    if x == text[len(text) - 1]:
+        modifiedText += '* ' + x
+    else:
+        modifiedText += '* ' + x + '\n' 
 print(modifiedText)
     
-#TODO: Seperate lines and add stars.
-
-pyperclip.copy(text)
+pyperclip.copy(modifiedText)
