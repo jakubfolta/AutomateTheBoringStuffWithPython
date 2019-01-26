@@ -4,7 +4,13 @@
 
 import pyperclip
 text = pyperclip.paste()
+text = text.split('\n')
+print(text)
 
+for x in text:
+    x = '* ' + x
+    print(x)
+    
 #TODO: Seperate lines and add stars.
 
 pyperclip.copy(text)
