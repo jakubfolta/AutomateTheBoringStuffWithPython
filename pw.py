@@ -1,8 +1,8 @@
-#! python 3
+#! python3
 #Project: password locker
 #Step 1: Program design and data structures
 
-# pw.py - An insecure password locker program
+#pw.py - An insecure password locker program
 
 PASSWORDS = {'email': 'fdwfrevrvfd',
              'blog': 'fwrfervkn3475ygvnf',
@@ -17,7 +17,7 @@ account = sys.argv[1] # first command line arg is the account name
 
 if account in PASSWORDS:
     pyperclip.copy(PASSWORDS[account])
-    print('Password for ' + account + 'copied to clipboard.')
+    print('Password for ' + account + ' copied to clipboard.')
 else:
     print('There is no account named ' + account + '.')
     
