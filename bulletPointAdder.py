@@ -20,3 +20,19 @@ for x in text:
 print(modifiedText)
     
 pyperclip.copy(modifiedText)
+
+#Another mothod.
+
+text = pyperclip.paste()
+
+lines = text.split('\n')
+
+for x in range(len(lines)):
+    lines[x] = '* ' + lines[x]
+
+'\n'.join(lines)
+print(lines)
+
+pyperclip.copy(lines)
+
+
