@@ -30,9 +30,10 @@ lines = text.split('\n')
 for x in range(len(lines)):
     lines[x] = '* ' + lines[x]
 
-'\n'.join(lines)
+lines = '\n'.join(lines)
 print(lines)
 
 pyperclip.copy(lines)
+
 
 
