@@ -3,4 +3,8 @@
 #of each line of text on the clipboard.
 
 import pyperclip
-text = peperclip.paste()
+text = pyperclip.paste()
+
+#TODO: Seperate lines and add stars.
+
+pyperclip.copy(text)
