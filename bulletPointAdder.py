@@ -6,10 +6,11 @@ import pyperclip
 text = pyperclip.paste()
 text = text.split('\n')
 print(text)
+modifiedText = ''
 
 for x in text:
-    x = '* ' + x
-    print(x)
+    modifiedText += '* ' + x + '\n'
+print(modifiedText)
     
 #TODO: Seperate lines and add stars.
 
