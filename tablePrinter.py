@@ -6,8 +6,8 @@ def printTable(table):
     colNumb = [0] * len(table)
 
     for x in table:
-        for y in range(len(x), end = ''):
-            print(y)
+        for y in x:
+            print(y, end = ' ')
         print()
             
     print(colNumb)
