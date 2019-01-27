@@ -7,6 +7,8 @@ def printTable(table):
 
     for x in table:
         for y in range(len(x), end = ''):
+            print(y)
+        print()
             
     print(colNumb)
     print(tableData)
