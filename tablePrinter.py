@@ -3,7 +3,7 @@ tableData = [['apples', 'oranges', 'cherries', 'banana'],
              ['dogs', 'cats', 'moose', 'goose']]
 
 def printTable(table):
-    colNumb = 
+    colNumb = len(table)
     column1 = ''
     column2 = ''
     column3 = ''
