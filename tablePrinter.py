@@ -3,6 +3,9 @@ tableData = [['apples', 'oranges', 'cherries', 'banana'],
              ['dogs', 'cats', 'moose', 'goose']]
 
 def printTable(table):
+    for x in table:
+        for y in x:
+            
     print(tableData)
     
 
