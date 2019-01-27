@@ -3,10 +3,8 @@ tableData = [['apples', 'oranges', 'cherries', 'banana'],
              ['dogs', 'cats', 'moose', 'goose']]
 
 def printTable(table):
-    colNumb = len(table)
-    column1 = ''
-    column2 = ''
-    column3 = ''
+    colNumb = [] * len(table)
+
     for x in table:
         for y in x:
             
