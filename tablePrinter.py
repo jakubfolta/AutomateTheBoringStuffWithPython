@@ -5,8 +5,8 @@ tableData = [['apples', 'oranges', 'cherries', 'banana'],
 def printTable(table):
     colNumb = [0] * len(table)
 
-    #for x in table:
-     #   for y in x:
+    for x in table:
+        for y in range(len(x), end = ''):
             
     print(colNumb)
     print(tableData)
