@@ -28,11 +28,18 @@ def printPictureFromGrid(argument):
 
 printPictureFromGrid(grid)
 
-rows = len(grid)
-col = len(grid[0])
 
-for x in range(cols):
-    for y in range
+
+rows = len(grid)
+cols = len(grid[0])
+
+def printPictureGrid(argument):
+    for x in range(cols):
+        for y in range(rows):
+            print(grid[y][x], end = ' ')
+        print()
+
+printPictureGrid(grid)
         
     
 
