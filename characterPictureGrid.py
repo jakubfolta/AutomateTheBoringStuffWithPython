@@ -40,7 +40,14 @@ def printPictureGrid(argument):
         print()
 
 printPictureGrid(grid)
-        
+
+def printPicture(lists):
+    for x in range(cols):
+        for i in range(rows):
+            print(grid[i][x], end = '-')
+        print()
+
+printPicture(grid)
     
 
 
