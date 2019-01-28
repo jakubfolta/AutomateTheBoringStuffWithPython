@@ -4,10 +4,12 @@ tableData = [['apples', 'oranges', 'cherries', 'banana'],
 
 def printTable(table):
     colNumb = [0] * len(table)
+    cols = len(tableData[0])
+    rows = len(tableData)
 
-    for x in table:
-        for y in x:
-            print(y.ljust(5), end = ' ')
+    for x in range(cols):
+        for y in range(rows):
+            print(table[y][x], end = ' ')
         print()
             
     print(colNumb)
