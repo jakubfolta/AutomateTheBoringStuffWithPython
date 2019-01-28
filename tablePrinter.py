@@ -7,7 +7,7 @@ def printTable(table):
 
     for x in table:
         for y in x:
-            print(y, end = ' ')
+            print(y.ljust(5), end = ' ')
         print()
             
     print(colNumb)
