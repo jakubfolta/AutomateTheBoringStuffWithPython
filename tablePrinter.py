@@ -4,10 +4,12 @@ tableData = [['apples', 'oranges', 'cherries', 'banana'],
 
 def findLongestString(table):
     colWidth = [0] * len(table)
-
-    for x in table:
-        for y in x:
-            y
+    cols = len(table[0])
+    rows = len(table)
+    
+    for x in range(cols):
+        for y in range(rows):
+            colWidth[rows].append()
             
 
 
