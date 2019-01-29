@@ -13,7 +13,7 @@ def findLongestString(table):
             print(colWidth[x])
             if int(colWidth[x]) < int(len(table[x][y])):
                     colWidth[x] = len(table[x][y])
-    print(colWidth)
+    return colWidth
     
 findLongestString(tableData)
             
