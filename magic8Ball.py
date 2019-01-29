@@ -3,7 +3,8 @@
 import random
 import time
 
-messages = ['As I see it, yes', 
+messages =
+['As I see it, yes', 
 'Ask again later', 
 'Better not tell you now', 
 'Cannot predict now', 
