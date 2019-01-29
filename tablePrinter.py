@@ -9,7 +9,7 @@ def printTable(table):
 
     for x in range(cols):
         for y in range(rows):
-            print(table[y][x], end = ' ')
+            print((table[y][x]).ljust(3), end = ' ')
         print()
             
     print(colNumb)
