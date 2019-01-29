@@ -9,12 +9,12 @@ def findLongestString(table):
     
     for x in range(rows):
         for y in range(cols):
-            if int(colWidth[x]) < int(len(table[x][y])):
+            if colWidth[x] < len(table[x][y]):
                     colWidth[x] = len(table[x][y])
     return colWidth
             
             
-def printTable(table):
+def printTableJustifiedToLongestStringInRow(table):
     cols = len(tableData[0])
     rows = len(tableData)
     colWidths = findLongestString(tableData)
@@ -24,4 +24,4 @@ def printTable(table):
             print((table[y][x]).rjust(colWidths[y]), end = ' ')
         print()
     
-printTable(tableData)
+printTableJustifiedToLongestStringInRow(tableData)
