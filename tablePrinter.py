@@ -7,11 +7,14 @@ def findLongestString(table):
     cols = len(table[0])
     rows = len(table)
     
-    for x in range(cols):
-        for y in range(rows):
+    for x in range(rows):
+        for y in range(cols):
+            if colWidth[y] < len(table[y][])
             colWidth[rows].append(table[x][y])
+            
     for x in table:
         for y in x:
+            
             
             
 
