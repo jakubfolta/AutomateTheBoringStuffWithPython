@@ -6,15 +6,19 @@ def findLongestString(table):
     colWidth = [0] * len(table)
     cols = len(table[0])
     rows = len(table)
+    print(colWidth)
     
     for x in range(rows):
         for y in range(cols):
-            if colWidth[x] < len(table[x][y])
-            colWidth[x] = table[x][y]
+            print(colWidth[x])
+            if int(colWidth[x]) < int(len(table[x][y])):
+                    colWidth[x] = len(table[x][y])
+    print(colWidth)
+    
+findLongestString(tableData)
             
             
-            
-
+'''
 
 def printTable(table):
     colWidth = [0] * len(table)
@@ -32,4 +36,4 @@ def printTable(table):
 
 
 
-printTable(tableData)
+printTable(tableData)'''
