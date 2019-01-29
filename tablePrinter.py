@@ -20,8 +20,8 @@ def printTable(table):
     cols = len(tableData[0])
     rows = len(tableData)
 
-    for x in range(rows):
-        for y in range(cols):
+    for x in range(cols):
+        for y in range(rows):
             print((table[y][x]).rjust(8), end = ' ')
         print()
             
