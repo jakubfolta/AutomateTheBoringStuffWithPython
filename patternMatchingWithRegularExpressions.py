@@ -30,3 +30,37 @@ for i in range(len(message)):
     if isPhoneNumber(chunk):
         print('Phone number found: ' + chunk)
 print('Done')
+
+#Finding patterns of text with regular expressions
+
+\d\d\d-\d\d\d-\d\d\d\d
+\d{3}-\d{3}-\d{4}
+
+#Creating regex objects
+
+import re
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
