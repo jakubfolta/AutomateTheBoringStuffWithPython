@@ -33,8 +33,8 @@ print('Done')
 
 #Finding patterns of text with regular expressions
 
-\d\d\d-\d\d\d-\d\d\d\d
-\d{3}-\d{3}-\d{4}
+'''\d\d\d-\d\d\d-\d\d\d\d
+\d{3}-\d{3}-\d{4}'''
 
 #Creating regex objects
 
@@ -42,8 +42,11 @@ import re
 
 phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
 
+#Matching regex objects
 
-
+phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+mo = phoneNumRegex.search('My number is 415-555-4242.')
+print('Phone number found: ' + mo.group())
 
 
 
