@@ -71,6 +71,8 @@ print(mo.group(2))
 
 #Matching multiple groups with the pipe
 
+heroRegex = re.compile(r'Batman|Tina Fey)
+                       
 
 
 
