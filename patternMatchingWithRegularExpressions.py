@@ -121,6 +121,40 @@ mo3 = batRegex.search('The adventures of Batwowowowoman')
 
 print(mo3.group())
 
+#Matching one or more with the plus
+
+batRegex = re.compile(r'Bat(wo)+man')
+mo1 = batRegex.search('The adventures of Batwoman')
+
+print(mo1.group())
+
+mo2 = batRegex.search('The adventures of Batwowowowoman')
+
+print(mo2.group())
+
+mo3 = batRegex.search('The adventures of Batman')
+
+print(mo3.group())
+
+#Matching specific repetitions with curly brackets
+
+haRegex = re.compile(r'(Ha){3}')
+mo1 = haRegex.search('HaHaHa')
+
+print(mo1.group())
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
