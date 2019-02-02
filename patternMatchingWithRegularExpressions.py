@@ -133,8 +133,7 @@ mo2 = batRegex.search('The adventures of Batwowowowoman')
 print(mo2.group())
 
 mo3 = batRegex.search('The adventures of Batman')
-
-print(mo3.group())
+print(mo3 == None)
 
 #Matching specific repetitions with curly brackets
 
