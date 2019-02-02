@@ -33,8 +33,8 @@ def findLongestString(table):
     rows = len(table)
     cols = len(table[0])
 
-    for x in range(0, rows):
-        for y in range(0, cols):
+    for x in range(rows):
+        for y in range(cols):
             if len(table[x][y]) > colWidths[x]:
                 colWidths[x] = len(table[x][y])
     return colWidths
