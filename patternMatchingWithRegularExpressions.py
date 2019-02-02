@@ -88,4 +88,33 @@ print(mo.group(1))
 
 #Optional matching with a question mark
 
+batRegex = re.compile(r'Bat(wo)?man')
+mo1 = batRegex.search('The adventures of Batman')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
