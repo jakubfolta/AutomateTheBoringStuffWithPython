@@ -157,9 +157,13 @@ print(mo2.group())
 
 #The findall() method
 
-phone 
+phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+mo = phoneNumRegex.search('Cell: 234-423-3245 Work: 211-357-5433')
+print(mo.group())
 
-
+phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+mo1 = phoneNumRegex.findall('Cell: 234-423-3245 Work: 211-357-5433')
+print(mo1)
 
 
 
