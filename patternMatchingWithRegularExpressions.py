@@ -183,6 +183,10 @@ vowelRegex = re.compile(r'[aeiouAEIOU]')
 mo = vowelRegex.findall('Robocop eats baby food. BABY FOOD.')
 print('-'.join(mo))
 
+consonantRegex = re.compile(r'[^aeiouAEIOU]')
+mo = consonantRegex.findall('Robocop eats baby FOOD.')
+print(mo)
+
 
 
 
