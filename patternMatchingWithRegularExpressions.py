@@ -165,9 +165,17 @@ phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
 mo1 = phoneNumRegex.findall('Cell: 234-423-3245 Work: 211-357-5433')
 print(mo1)
 
+phoneNumRegex = re.compile(r'(\d\d\d)-(\d\d\d)-(\d\d\d\d)')
+mo1 = phoneNumRegex.findall('Cell: 234-423-3245 Work: 211-357-5433')
+print(mo1)
 
+#Character classes
 
-
+xmasRegex = re.compile(r'\d+\s\w+')
+mo = xmasRegex.findall('12 drummers, 11 pipers, \
+10 lords, 9 ladies, 8 maids, \
+7 swans, 6 geese, 5 rings, 4 birds, 3 hens, 2 doves, 1 partridge')
+print(mo)
 
 
 
