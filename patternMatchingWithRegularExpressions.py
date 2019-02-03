@@ -187,6 +187,46 @@ consonantRegex = re.compile(r'[^aeiouAEIOU]')
 mo = consonantRegex.findall('Robocop eats baby FOOD.')
 print(mo)
 
+#The carret and dollar sign characters
+
+beginsWithHello = re.compile(r'^Hello')
+mo = beginsWithHello.search('Hello world!')
+print(mo)
+
+beginsWithHello.search('He said hello.') == None
+
+endsWithNumber = re.compile(r'\d$')
+mo = endsWithNumber.search('Your number is 43')
+print(mo)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
