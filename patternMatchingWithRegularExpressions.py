@@ -220,6 +220,8 @@ greedyRegex = re.compile(r'<.*>')
 mo = greedyRegex.search('<To serve man> for dinner.>')
 print(mo.group())
 
+#Matching newlines with the dot character
+
 
 
 
