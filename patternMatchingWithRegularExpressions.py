@@ -205,6 +205,12 @@ atRegex = re.compile(r'.at')
 mo = atRegex.findall('The cat in the hat sat on the flat mat.')
 print(mo)
 
+#Matching everything with dot-star
+
+nameRegex = re.compile(r'First Name: (.*) Last Name: (.*)')
+mo = nameRegex.search('First Name: Al Last Name: Sweigart')
+print(mo.group(1))
+print(mo.group(2))
 
 
 
