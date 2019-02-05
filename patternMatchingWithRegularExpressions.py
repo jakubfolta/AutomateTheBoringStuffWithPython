@@ -269,11 +269,19 @@ phoneRegex = re.compile(r'''(
 (\s*(ext|x|ext.)\s*\d{2,5})?   #extension
 )''', re.VERBOSE)
 
+#Combining re.Ignorecase, re.DOTALL, and re.VERBOSE
+
+someRegexValue = re.compile('foo' re.IGNORECASE | re.DOTALL)
+
+someRegexValue = re.compile('foo', re.IGNORECASE | re.DOTALL | re.VERBOSE)
+
+#Project:Phone number and email address extractor
 
 
 
 
 
+ 
 
 
 
