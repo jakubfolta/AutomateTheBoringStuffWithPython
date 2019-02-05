@@ -241,10 +241,11 @@ robocop = re.compile(r'robocop', re.I)
 mo = robocop.search('Robocop is a part man, part machine, all cop').group()
 print(mo)
 
+mo1 = robocop.search('RoboCOP protects the innocent.').group()
+print(mo1)
 
-
-
-
+mo2 = robocop.search('Al, why does your programming book talk about robocop so much?').group()
+print(mo2)
 
 
 
