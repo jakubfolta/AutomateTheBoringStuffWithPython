@@ -232,6 +232,10 @@ print(mo)
 
 #Case-insensitive matching
 
+regex1 = re.compile('RobocoP')
+regex1 = re.compile('RobOcop')
+regex1 = re.compile('robocoP')
+regex1 = re.compile('RoBocOp')
 
 
 
