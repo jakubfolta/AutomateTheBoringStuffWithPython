@@ -247,13 +247,11 @@ print(mo1)
 mo2 = robocop.search('Al, why does your programming book talk about robocop so much?').group()
 print(mo2)
 
+#Substituting strings with the sub() method
 
-
-
-
-
-
-
+namesRegex = re.compile(r'Agent \w+')
+mo = namesRegex.sub('CENSORED', 'Agent Alice gave the secret documents to Agent Bob.')
+print(mo)
 
 
 
