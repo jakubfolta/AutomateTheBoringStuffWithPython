@@ -223,9 +223,12 @@ print(mo.group())
 #Matching newlines with the dot character
 
 noNewLineRegex = re.compile('.*')
+mo = noNewLineRegex.search('Serve the public trust.\nProtect the innocet.\nUphold the law.').group()
+print(mo)
 
-
-
+newLineRegex = re.compile('.*', re.DOTALL)
+mo = newLineRegex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
+print(mo)
 
 
 
