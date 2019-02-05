@@ -230,6 +230,8 @@ newLineRegex = re.compile('.*', re.DOTALL)
 mo = newLineRegex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
 print(mo)
 
+#Case-insensitive matching
+
 
 
 
