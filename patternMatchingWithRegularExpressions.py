@@ -237,8 +237,9 @@ regex1 = re.compile('RobOcop')
 regex1 = re.compile('robocoP')
 regex1 = re.compile('RoBocOp')
 
-
-
+robocop = re.compile(r'robocop', re.I)
+mo = robocop.search('Robocop is a part man, part machine, all cop').group()
+print(mo)
 
 
 
