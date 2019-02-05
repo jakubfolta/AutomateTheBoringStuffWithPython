@@ -222,6 +222,7 @@ print(mo.group())
 
 #Matching newlines with the dot character
 
+noNewLineRegex = re.compile('.*')
 
 
 
