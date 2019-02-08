@@ -284,22 +284,9 @@ someRegexValue = re.compile('foo', re.IGNORECASE | re.DOTALL | re.VERBOSE)
 
 numberRegex = re.compile(r'^\d{1,3}(,\d{3})*$')
 
+#Q: How would you write a regex that matches the full name of someone
+#whose last name is Nakamoto? You can assume that the first name
+#that comes before it will always be one
+#word that begins with a capital letter.
 
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+nameRegex = re.compile
