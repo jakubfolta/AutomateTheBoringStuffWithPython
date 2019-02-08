@@ -277,6 +277,13 @@ someRegexValue = re.compile('foo', re.IGNORECASE | re.DOTALL | re.VERBOSE)
 
 #Project:Phone number and email address extractor
 
+#Practice questions
+
+#Q: How to write a regex that matches a number with
+#commas for every three digits?
+
+numberRegex = re.compile(r'^\d{1,3}(,\d{3})*$')
+
 
 
 
