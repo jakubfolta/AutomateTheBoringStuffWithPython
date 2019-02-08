@@ -289,4 +289,4 @@ numberRegex = re.compile(r'^\d{1,3}(,\d{3})*$')
 #that comes before it will always be one
 #word that begins with a capital letter.
 
-nameRegex = re.compile
+nameRegex = re.compile(r'[A-Z][a-z]*\sNakamoto')
