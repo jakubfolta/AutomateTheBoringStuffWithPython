@@ -311,5 +311,5 @@ print(mor)
 #the string against multiple regex patterns to validate its strength.
 
 def checkIfStrongPassword(text):
-    passwordRegex = re.compile(r'[a-z]{8}')
+    passwordRegex = re.compile(r'(\d)*|(\w)*{8}')
 
