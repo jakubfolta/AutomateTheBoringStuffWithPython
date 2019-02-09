@@ -271,7 +271,7 @@ phoneRegex = re.compile(r'''(
 
 #Combining re.Ignorecase, re.DOTALL, and re.VERBOSE
 
-someRegexValue = re.compile('foo' re.IGNORECASE | re.DOTALL)
+someRegexValue = re.compile('foo' ,re.IGNORECASE | re.DOTALL)
 
 someRegexValue = re.compile('foo', re.IGNORECASE | re.DOTALL | re.VERBOSE)
 
@@ -298,4 +298,8 @@ nameRegex = re.compile(r'[A-Z][a-z]*\sNakamoto')
 #sentence ends with a period?
 #This regex should be case-insensitive.
 
-textRegex = re.compile(r'(Alice|Bob|Carol)\s(eats|pets|throws)\s()\.$', re.IGNORCASE)
+textRegex = re.compile(r'(Alice|Bob|Carol)\s(eats|pets|throws)\s(apples|cats|baseballs)\.$', re.IGNORECASE)
+mo = textRegex.search('Alice eats apples.')
+mor = textRegex.search('ALICE THROWS FOOTBALLS.')
+print(mo.group())
+print(mor)
