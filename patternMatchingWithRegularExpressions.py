@@ -298,4 +298,4 @@ nameRegex = re.compile(r'[A-Z][a-z]*\sNakamoto')
 #sentence ends with a period?
 #This regex should be case-insensitive.
 
-textRegex = re.compile(r'(Alice|Bob|Carol)\s(eats|pets|throws)')
+textRegex = re.compile(r'(Alice|Bob|Carol)\s(eats|pets|throws)\s()\.$', re.IGNORCASE)
