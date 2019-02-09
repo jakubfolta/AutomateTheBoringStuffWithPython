@@ -290,3 +290,12 @@ numberRegex = re.compile(r'^\d{1,3}(,\d{3})*$')
 #word that begins with a capital letter.
 
 nameRegex = re.compile(r'[A-Z][a-z]*\sNakamoto')
+
+#Q: How would you write a regex that matches a sentence
+#where the first word is either Alice, Bob, or Carol; the
+#second word is either eats, pets, or throws; the third 
+#word is apples, cats, or baseballs; and the
+#sentence ends with a period?
+#This regex should be case-insensitive.
+
+textRegex = re.compile(r'(Alice|Bob|Carol)\s(eats|pets|throws)')
