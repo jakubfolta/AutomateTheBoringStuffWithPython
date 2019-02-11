@@ -310,14 +310,11 @@ print(mor)
 #lowercase characters, and has at least one digit. You may need to test
 #the string against multiple regex patterns to validate its strength.
 
-passwordRegex = re.compile(r'(.*\d+.*\w+.*){8,}')
-mo = passwordRegex.search('ghjghhbc7def')
+passwordRegex = re.compile(r'\w+')
+mo = passwordRegex.search('ghjghhbcdef')
 print(mo)
+if passwordRegex != None:
+    print('Done')
 
 def checkIfStrongPassword(password):
-    passwordRegex = re.compile(r'(.*\d+.*\w+.*){8,}')
-    mo = passwordRegex.search('ghjghhbc7def')
-    print(mo)
-
-
-print(checkIfStrongPassword('ghjghhbc7def'))
+  pass
