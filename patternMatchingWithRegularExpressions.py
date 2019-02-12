@@ -310,7 +310,7 @@ print(mor)
 #lowercase characters, and has at least one digit. You may need to test
 #the string against multiple regex patterns to validate its strength.
 
-passwordRegex = re.compile(r'(\w+\d+){4}')
+passwordRegex = re.compile(r'(\w+\d+){6}')
 mo = passwordRegex.search('ghjghhb4c45def')
 print(mo)
 if mo != None:
