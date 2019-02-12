@@ -315,7 +315,8 @@ mo = passwordRegex.search('ghjghhb4c45def')
 print(mo)
 if mo != None:
     print('Done')
-
+else:
+    print('No match!')
 
 def checkIfStrongPassword(password):
   pass
