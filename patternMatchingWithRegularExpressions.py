@@ -339,7 +339,7 @@ checkIfStrongPassword()
 #argument to the function will be removed from the string.
 
 stripRegex = re.compile(r'\s*')
-mo = stripRegex.sub('', '" kjghgj "')
+mo = stripRegex.sub('', ' kjghgj ')
 print(mo)
 
 
