@@ -311,7 +311,7 @@ print(mor)
 #the string against multiple regex patterns to validate its strength.
 
 passwordRegex = re.compile(r'(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}')
-mo = passwordRegex.search('ghjghhb4c45def')
+mo = passwordRegex.search('ghPjghhb4c45def')
 print(mo)
 if mo != None:
     print('Done')
@@ -319,4 +319,8 @@ else:
     print('No match!')
 
 def checkIfStrongPassword(password):
-  pass
+  print('Please enter your password to check if it\'s valid:')
+  password = input()
+  if passwordRegex.search(password) != None:
+      print('Your password is valid')
+      else:
