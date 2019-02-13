@@ -318,9 +318,15 @@ if mo != None:
 else:
     print('No match!')
 
-def checkIfStrongPassword(password):
-  print('Please enter your password to check if it\'s valid:')
-  password = input()
-  if passwordRegex.search(password) != None:
-      print('Your password is valid')
-      else:
+def checkIfStrongPassword():
+    print('Your password should be at least 8 characters long and \
+should containss at least one lowercase, one uppercase \
+character and at least one digit.   ')
+    print('Please enter your password to check if it\'s valid:')
+    password = input()
+    if passwordRegex.search(password) != None:
+        print('Your password is valid')
+    else:
+        print('Your password is not valid')
+
+checkIfStrongPassword()
