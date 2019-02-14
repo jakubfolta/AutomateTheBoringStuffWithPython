@@ -338,9 +338,13 @@ checkIfStrongPassword()
 #the string. Otherwise, the characters specified in the second
 #argument to the function will be removed from the string.
 
-stripRegex = re.compile(r'\s')
-mo = stripRegex.sub('', '" kjghgj fdgfs "')
+stripSpaceRegex = re.compile(r'\s')
+mo = stripSpaceRegex.sub('', '" kjghgj fdgfs "')
 print(mo)
+
+stripSecondStringRegex = re.compile(r'(\w)*(.*\w)*?')
+mo2 = stripSecondStringRegex.search()
+
 
 
 
