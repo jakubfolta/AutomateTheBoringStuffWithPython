@@ -344,12 +344,13 @@ def removeSpacesAndSecondString(text):
     mo = stripSpaceRegex.sub('', '" kjghgj fdgfs "')
     print(mo)'''
 
-    stripSecondStringRegex = re.compile(r'((\w)*(.*\w)*?)')
-    for groups in stripSecondStringRegex.search(text):
+    stripSecondStringRegex = re.compile(r'((\w+)\s(\w+)?)')
+    for groups in stripSecondStringRegex.findall(text):
         newText = groups[1]
     print(newText)
+    return newText
 
-removeSpacesAndSecondString('hjdshfk hfjhew')
+removeSpacesAndSecondString('" dom stoi "')
 
 
 
