@@ -339,6 +339,12 @@ checkIfStrongPassword()
 #argument to the function will be removed from the string.
 
 def removeSpacesAndSecondString(text):
+    stri = 'gh hjkhjk jbjk bju'
+    if len(stri.split()) > 1:
+        print('More')
+        
+    for x in stri.split():
+        print(x)
     
     '''stripSpaceRegex = re.compile(r'\s')
     mo = stripSpaceRegex.sub('', '" kjghgj fdgfs "')
