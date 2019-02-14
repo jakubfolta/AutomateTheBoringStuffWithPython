@@ -351,7 +351,7 @@ def removeSpaces(text):
     mo = stripSpaceRegex.sub('', text)
     print(mo)
 
-text = '" ghjjkhkj     "'
+text = '"  hjjkhk hjkhjkk "'
 
 if len(text.split()) > 1:
     removeSpacesAndSecondString(text)
