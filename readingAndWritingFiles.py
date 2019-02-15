@@ -20,11 +20,13 @@ print(os.getcwd())
 
 import os
 
-print(os.makedirs('C\\delicious\\walnut\\waffles'))
+'''print(os.makedirs('C:\\delicious\\walnut\\waffles'))'''
 
 #The os.path module
 #Handling absolute and relative paths
 print(os.path.abspath('.'))
+
+print(os.path.abspath(('.\\Scripts')))
 
 
 
