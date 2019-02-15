@@ -28,6 +28,8 @@ print(os.path.abspath('.'))
 
 print(os.path.abspath(('.\\Scripts')))
 
+print(os.path.isabs(os.path.abspath('.')))
+
 
 
 
