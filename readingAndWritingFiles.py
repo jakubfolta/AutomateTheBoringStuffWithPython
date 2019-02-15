@@ -30,9 +30,9 @@ print(os.path.abspath(('.\\Scripts')))
 
 print(os.path.isabs(os.path.abspath('.')))
 
+print(os.path.relpath('C:\\Windows', 'C:\\'))
 
-
-
+print(os.path.relpath('C:\\Windows', 'C:\\spam\\eggs'))
 
 
 
