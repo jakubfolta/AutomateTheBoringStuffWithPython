@@ -34,7 +34,7 @@ print(os.path.relpath('C:\\Windows', 'C:\\'))
 
 print(os.path.relpath('C:\\Windows', 'C:\\spam\\eggs'))
 
-
+print(os.getcwd(), 'C:\\Python34')
 
 
 
