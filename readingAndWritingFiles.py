@@ -13,17 +13,39 @@ for filename in myFiles:
 import os
 
 print(os.getcwd())
-print(os.chdir('C\\Windows\\System32'))
+'''print(os.chdir('C\\Windows\\System32'))'''
 
 #Absolute vs Relative paths
 #Creating new folders with os.makedirs()
 
 import os
 
-os makedirs('C\\delicious\\walnut\\waffles')
+print(os.makedirs('C\\delicious\\walnut\\waffles'))
 
 #The os.path module
 #Handling absolute and relative paths
+print(os.path.abspath('.'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
