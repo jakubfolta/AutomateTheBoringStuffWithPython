@@ -36,6 +36,9 @@ print(os.path.relpath('C:\\Windows', 'C:\\spam\\eggs'))
 
 print(os.getcwd(), 'C:\\Python34')
 
+path = 'C:\\Windows\\System32\\calc.exe'
+print(os.path.basename(path))
+
 
 
 
