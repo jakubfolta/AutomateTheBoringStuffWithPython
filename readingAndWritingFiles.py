@@ -61,6 +61,7 @@ for filename in os.listdir('C:\\Windows\\System32'):
 
 print(totalSize)
 
+#Checking path validity
 
 
 
