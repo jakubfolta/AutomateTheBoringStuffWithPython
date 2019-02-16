@@ -47,12 +47,13 @@ print(os.path.split(calcFilePath))
 
 print((os.path.dirname(calcFilePath), os.path.basename(calcFilePath)))
 
+print(calcFilePath.split(os.path.sep))
 
+#Finding file sizes and folder contents
 
+print(os.path.getsize('C:\\Windows\\System32\\calc.exe'))
 
-
-
-
+print(os.listdir('C:\\Windows\\System32'))
 
 
 
