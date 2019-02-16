@@ -45,6 +45,20 @@ calcFilePath = 'C:\\Windows\\System32\\calc.exe'
 
 print(os.path.split(calcFilePath))
 
+print((os.path.dirname(calcFilePath), os.path.basename(calcFilePath)))
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
