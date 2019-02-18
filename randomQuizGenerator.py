@@ -34,6 +34,9 @@ for quizNum in range(35):
     answerKeyFile = open('capitalsquiz_answers%s.txt' % (quizNum +1), 'w')
 
     #TODO: Write out the header for the quiz.
+    quizFile.write('Name:\n\nDate:\n\nPeriod:\n\n')
+    quizFile.write((' ' * 20) + 'State Capitals Quiz (Form %s)' % (quizNum + 1))
+    quizFile.write('\n\n')
 
     #TODO: Shuffle the order of the states.
 
