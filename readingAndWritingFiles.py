@@ -62,7 +62,25 @@ for filename in os.listdir('C:\\Windows\\System32'):
 print(totalSize)
 '''
 #Checking path validity\
+
 print(os.path.exists('C:\\Windows'))
+print(os.path.exists('C:\\Somefolder'))
+print(os.path.isdir('C:\\Windows\\System32'))
+print(os.path.isfile('C\\Windows\\System32'))
+print(os.path.isfile('C:\\Windows\\System32\\calc.exe'))
+print(os.path.exists('D:\\'))
+
+#The file reading/writing process
+#Opening files with the open() function
+
+hellofile = open('C:\\Users\ogi-8\hello.txt')
+
+#Reading the contents of files
+
+helloContent = hellofile.read()
+print(helloContent)
+
+
 
 
 
