@@ -1,5 +1,3 @@
-#Step 1: Store the quiz data in a dictionary
-
 #! python3
 #randomQuizGenerator.py - Creates quizzes with questions and answers
 #in random order, along with the answer key.
@@ -39,9 +37,8 @@ for quizNum in range(35):
     quizFile.write('\n\n')
 
     #TODO: Shuffle the order of the states.
+    states = list(capitals.keys())
+    random.shuffle(states)
 
     #TODO: Loop through all 50 states, making a question for each.
-
-#Step 2: Create the quiz file and shuffle the question order
-
     
