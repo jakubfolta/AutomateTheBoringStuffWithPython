@@ -48,7 +48,7 @@ print(os.path.split(calcFilePath))
 print((os.path.dirname(calcFilePath), os.path.basename(calcFilePath)))
 
 print(calcFilePath.split(os.path.sep))
-
+'''
 #Finding file sizes and folder contents
 
 print(os.path.getsize('C:\\Windows\\System32\\calc.exe'))
@@ -60,9 +60,9 @@ for filename in os.listdir('C:\\Windows\\System32'):
        totalSize = totalSize + os.path.getsize(os.path.join('C:\\Windows\\System32', filename))                   
 
 print(totalSize)
-
-#Checking path validity
-
+'''
+#Checking path validity\
+print(os.path.exists('C:\\Windows'))
 
 
 
