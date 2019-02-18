@@ -119,9 +119,15 @@ shelfFile.close()
 #Saving variables with the pprint.pformat() function
 import pprint
 cats = [{'name': 'Zophie', 'desc': 'chubby'}, {'name': 'Pooka', 'desc': 'fluffy'}]
-print(pprint.pformat(cats))
+pprint.pformat(cats)
 
+fileObj = open('myCats.py', 'w')
+fileObj.write('cats = ' + pprint.pformat(cats) + '\n')
+fileObj.close()
 
+fileObj = open('myCats.py')
+print(fileObj.read())
+fileObj.close()
 
 
 
