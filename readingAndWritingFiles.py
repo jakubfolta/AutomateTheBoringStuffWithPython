@@ -80,12 +80,46 @@ hellofile = open('C:\\Users\ogi-8\hello.txt')
 helloContent = hellofile.read()
 print(helloContent)
 
+sonnetFile = open('C:\\Users\ogi-8\sonnet29.txt')
+print(sonnetFile.readlines())
 
+#Writing to files
 
+baconFile = open('bacon.txt', 'w')
+print(baconFile.write('Hello world!\n'))
+baconFile.close()
 
+baconFile = open('bacon.txt', 'a')
+print(baconFile.write('Bacon is not a vegetable.'))
+baconFile.close()
 
+baconFile = open('bacon.txt')
+content = baconFile.read()
+baconFile.close()
+print(content)
 
+#Saving variables with the shelve module
 
+import shelve
+shelfFile = shelve.open('mydata')
+cats = ['Zophie', 'Pooka', 'Simon']
+shelfFile['cats'] = cats
+shelfFile.close()
+
+shelfFile = shelve.open('mydata')
+print(type(shelfFile))
+print(shelfFile['cats'])
+shelfFile.close()
+
+shelfFile = shelve.open('mydata')
+print(list(shelfFile.keys()))
+print(list(shelfFile.values()))
+shelfFile.close()
+
+#Saving variables with the pprint.pformat() function
+import pprint
+cats = [{'name': 'Zophie', 'desc': 'chubby'}, {'name': 'Pooka', 'desc': 'fluffy'}]
+print(pprint.pformat(cats))
 
 
 
