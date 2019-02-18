@@ -129,6 +129,21 @@ fileObj = open('myCats.py')
 print(fileObj.read())
 fileObj.close()
 
+import myCats
+
+print(myCats.cats)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
