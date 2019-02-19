@@ -4,7 +4,7 @@
 
 import random
 
-# The quiz data. Keys are states and values are their capitals.
+#The quiz data. Keys are states and values are their capitals.
 
 capitals = {'Alabama': 'Montgomery', 'Alaska': 'Juneau', 'Arizona': 'Phoenix',
 'Arkansas': 'Little Rock', 'California': 'Sacramento', 'Colorado': 'Denver',
@@ -41,4 +41,30 @@ for quizNum in range(35):
     random.shuffle(states)
 
     #TODO: Loop through all 50 states, making a question for each.
+
+
+    #Generate 35 quiz files
+
+for quizNum in range(35):
+    #TODO: Create the quiz and answer key files.
+  
+
+    #TODO: Write out the header for the quiz.
+   
+
+    #TODO: Shuffle the order of the states.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
     
