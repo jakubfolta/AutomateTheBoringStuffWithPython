@@ -47,8 +47,8 @@ for quizNum in range(35):
 
 for quizNum in range(35):
     #TODO: Create the quiz and answer key files.
-  
-
+    quizFile = open('capitals_quiz%s' % (quizNum + 1)
+    quizAnswersFile = 
     #TODO: Write out the header for the quiz.
    
 
