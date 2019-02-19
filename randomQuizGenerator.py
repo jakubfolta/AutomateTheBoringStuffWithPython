@@ -47,8 +47,8 @@ for quizNum in range(35):
 
 for quizNum in range(35):
     #TODO: Create the quiz and answer key files.
-    quizFile = open('capitals_quiz%s' % (quizNum + 1)
-    quizAnswersFile = 
+    quizFile = open('capitals_quiz%s' % (quizNum + 1), 'w')
+    quizAnswersFile =open('quiz_answers%s' % (quizNum + 1), 'w')
     #TODO: Write out the header for the quiz.
    
 
