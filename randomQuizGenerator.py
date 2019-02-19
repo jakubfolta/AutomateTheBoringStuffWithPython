@@ -50,6 +50,10 @@ for quizNum in range(35):
     quizFile = open('capitals_quiz%s' % (quizNum + 1), 'w')
     quizAnswersFile =open('quiz_answers%s' % (quizNum + 1), 'w')
     #TODO: Write out the header for the quiz.
+    quizFile.write('Name:\n\nDate:\n\nPeriod:\n\n')
+    quizFile.write((' ' * 20) + 'Capitals Quiz File%s' % (quizNum + 1))
+    quizFile.write(\n\n)
+    
    
 
     #TODO: Shuffle the order of the states.
