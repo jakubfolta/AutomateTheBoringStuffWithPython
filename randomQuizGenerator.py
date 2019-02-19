@@ -46,15 +46,19 @@ for questionNum in range(50):
     #Get right and wrong answers.
     
     correctAnswer = capitals[states[questionNum]]
+    print(type(correctAnswer))
     wrongAnswers = list(capitals.values())
     del wrongAnswers[wrongAnswers.index(correctAnswer)]
     wrongAnswers = random.sample(wrongAnswers, 3)
+    print(type(wrongAnswers))
     answerOptions = wrongAnswers + [correctAnswer]
+    print(type(answerOptions))
     random.shuffle(answerOptions)
 
     #Write the question and answer options to the quiz file.
     quizFile.write('%s. What is the capital of %s?\n' % (questionNum + 1, states[questionNum]))
-    
+    for i in range(4):
+        quizFile.write(' %s. %s\n' % ('ABCD'[i], ))
 
     #TODO: Write the answer key to a file.
 
