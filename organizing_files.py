@@ -50,4 +50,7 @@ example_zip.close()
 # Creating and adding to ZIP files
 
 new_zip = zipfile.ZipFile('file.zip', 'w')
-new_zip.write('git comments.txt', compress_type=)
+new_zip.write('git comments.txt', compress_type=zipfile.ZIP_DEFLATED)
+new_zip.close()
+
+zip_file = zipfile
