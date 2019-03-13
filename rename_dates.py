@@ -18,6 +18,7 @@ date_pattern = re.compile(r'''^(.*?) # all text before the date
 for amer_filename in os.listdir('.'):
     mo = date_pattern.search(amer_filename)
 
+'''
 # TODO: Skip files without date.
     if mo == None:
         continue
@@ -36,7 +37,8 @@ for amer_filename in os.listdir('.'):
     abs_working_directory = os.path.abspath('.')
     amer_filename = os.path.join(abs_working_directory, amer_filename)
     euro_filename = os.path.join(abs_working_directory, euro_filename)
-     
+
 # TODO: Rename the files.
     print('Renaming "{}" to "{}"...'.format(amer_filename, euro_filename))
     #shutil.move(amer_filename, euro_filename) # uncomment after testing
+'''
