@@ -17,7 +17,8 @@ date_pattern = re.compile(r'''^(.*?) # all text before the date
 # TODO: Loop over the files in the working directory.
 for amer_filename in os.listdir('.'):
     mo = date_pattern.search(amer_filename)
-
+print(os.path.abspath('.'))
+print(os.getcwd())
 '''
 # TODO: Skip files without date.
     if mo == None:
