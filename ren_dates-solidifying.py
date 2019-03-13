@@ -31,6 +31,7 @@ for europ_filename in os.listdir('.'):
     after_text = match.group(8)
 
 # TODO: Create proper filename.
+    amer_filename = before_text + month_match + '-' + day_match + '-' + year_match + after_text
 
 # TODO: Create absolute paths to exchange.
 # TODO: Change filenames and print changes.
