@@ -9,8 +9,8 @@ import shutil
 
 # TODO: Create date format regex.
 date_pattern = re.compile(r'''^(.*?) # all text before date
-    ((0|1)?\d)                       # one or two digits for a month
-    ((0|1|2|3)?\d)                   # one or two digits for a day
+    ((0|1)?\d)-                       # one or two digits for a month
+    ((0|1|2|3)?\d)-                   # one or two digits for a day
     ((19|20)\d\d)                    # four digits for a year
     (.*?)$
 ''', re.VERBOSE)
@@ -24,14 +24,20 @@ for amer_filename in os.listdir('.'):
         continue
 
 # Get needed part of filename.
-before_date = match.group(1)
-month = match.group(2)
-day = match.group(4)
-year = match.group(6)
-after_date = match.group(8)
+    before_date = match.group(1)
+    month = match.group(2)
+    day = match.group(4)
+    year = match.group(6)
+    after_date = match.group(8)
 
-# TODO: Create proper filename.
-europ_filename = 
+# Create proper filename.
+    europ_filename = before_date + day + '-' + month + '-' + year + after_date
 
-# TODO: Get absolut paths to exchange.
-# TODO: Exchange filenames and print changes to console.
+# Get absolut paths to exchange.
+    abs_path = os.path.abspath('.')
+    amer_filename = os.path.join(abs_path, amer_filename)
+    europ_filename = os.path.join(abs_path, europ_filename)
+
+# Exchange filenames and print changes to console.
+    print('Change "{}" to "{}"'.format(amer_filename, europ_filename))
+    shutil.move(amer_filename, europ_filename)
