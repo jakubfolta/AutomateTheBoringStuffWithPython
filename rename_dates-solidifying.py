@@ -3,13 +3,10 @@
 # rename_dates.py - Rename filenames with american date format to european date format.
 
 # TODO: Import essential modules.
-# TODO:
-# TODO:
-# TODO:
-# TODO:
-# TODO:
-# TODO:
-# TODO:
-# TODO:
-# TODO:
-# TODO:
+# TODO: Create date format regex.
+# TODO: Loop the files in the working directory.
+# TODO: Skip files without match to regex.
+# TODO: Get needed part of filename.
+# TODO: Create proper filename.
+# TODO: Get absolut paths to exchange.
+# TODO: Exchange filenames and print changes to console.
