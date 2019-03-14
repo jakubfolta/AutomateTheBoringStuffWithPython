@@ -2,7 +2,11 @@
 
 # rename_dates.py - Rename filenames with american date format to european date format.
 
-# TODO: Import essential modules.
+# Import essential modules.
+import os
+import re
+import shutil
+
 # TODO: Create date format regex.
 # TODO: Loop the files in the working directory.
 # TODO: Skip files without match to regex.
