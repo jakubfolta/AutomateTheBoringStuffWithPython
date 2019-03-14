@@ -53,4 +53,6 @@ new_zip = zipfile.ZipFile('file.zip', 'w')
 new_zip.write('git comments.txt', compress_type=zipfile.ZIP_DEFLATED)
 new_zip.close()
 
-zip_file = zipfile
+zip_file = zipfile.ZipFile('file.zip')
+zip_file.extract('git comments.txt', 'C:\\Users\ogi-8')
+zip_file.close()
