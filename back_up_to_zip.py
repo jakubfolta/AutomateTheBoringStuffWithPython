@@ -17,4 +17,18 @@ def backup_to_zip(folder):
         if not os.path.exists(zip_filename):
             break
         number += 1
-        
+
+    # Create the zip file.
+    print('Creating "{}"'.format(zip_filename))
+    backup_zip = zipfile.ZipFile(zip_filename, 'w')
+
+    # Walk the entire folder tree and compress the files in each folder.
+    for folder_name, subfolders, file_names in os.walk(folder):
+        # Add the curent folder to zip file.
+        print('Adding files in {}...'.format(folder_name))
+        backup_zip.write(folder_name)
+        # Add
+
+    print('Done')
+
+backup_to_zip('PythonProjects\\AutomateTheBoringStuffWithPython')
