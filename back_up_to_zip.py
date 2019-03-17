@@ -6,8 +6,8 @@
 import zipfile
 import os
 
+# Backup the entire contents of "folder" into a zip file.
 def backup_to_zip(folder):
-    # Backup the entire contents of "folder" into a zip file.
     folder = os.path.abspath(folder)
     # Figure out the filename this code should use based on
     # what files already exist.
