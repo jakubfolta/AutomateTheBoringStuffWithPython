@@ -27,7 +27,13 @@ def backup_to_zip(folder):
         # Add the curent folder to zip file.
         print('Adding files in {}...'.format(folder_name))
         backup_zip.write(folder_name)
-        # Add
+        # Add all the files in this folder to the zip file.
+        for filename in file_names:
+            new_base = os.path.basename(folder) + '_'
+            if filename.startswith(new_base) and filename.endswith('.zip'):
+                continue
+            backup_zip.write(os.path.join(folder_name, filename))
+    backup_zip.close()
 
     print('Done')
 
