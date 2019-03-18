@@ -34,8 +34,8 @@ def create_zipfile(folder):
             base_name = os.path.basename(folder) + '_'
             if file.startswith(base_name) and file.endswith('.zip'):
                 continue
-            zip_file.write(os.path.join(folder, filename))
+            zip_file.write(os.path.join(folder, file))
     zip_file.close()
     print('Done')
 
-create_zipfile(C:\Users\ogi-8\Desktop\PythonProjects\AddDigits)
+create_zipfile('C:\\Users\\ogi-8\Desktop\PythonProjects\AddDigits')
