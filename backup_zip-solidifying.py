@@ -28,7 +28,7 @@ def create_zipfile(folder):
     for folder, subfolder, filename in os.walk(folder):
 # Add folder to zip_file.
         print('Adding files in {}.'.format(folder))
-
+        zip_file.write(folder)
 # Add files.
         for file in filename:
             base_name = os.path.basename(folder) + '_'
@@ -38,4 +38,4 @@ def create_zipfile(folder):
     zip_file.close()
     print('Done')
 
-create_zipfile('C:\\Users\\ogi-8\Desktop\PythonProjects\AddDigits')
+create_zipfile('C:\\Users\ogi-8\Desktop\PythonProjects\AddDigits')
