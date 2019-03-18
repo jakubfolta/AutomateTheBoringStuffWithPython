@@ -6,8 +6,34 @@
 import zipfile
 import os
 
-# TODO: Create function.
-# TODO: Create abspath for folder path.
-# TODO: Create zipfile name.
-# TODO: Create zipfile.
-# TODO: Loop through pathtree and add to zipfile folders and files.
+# Create function.
+def create_zipfile(folder):
+
+# Create abspath for folder path.
+    folder = os.path.abspath(folder)
+
+# Create zipfile name.
+    number = 1
+    while True:
+        zip_name = os.path.basename(folder) + '_' + str(number) + '.zip'
+        if not os.path.exists(zip_name):
+            break
+        number += 1
+
+# Create zipfile.
+    print('Creating {}'.format(zip_name))
+    zip_file = zipfile.ZipFile(zip_name, 'w')
+
+# Loop through pathtree and add to zipfile folders and files.
+    for folder, subfolder, filename in os.walk(folder):
+# Add folder to zip_file.
+        print('Adding files in {}.'.format(folder))
+
+# TODO: Add files.
+        for file in filename:
+            base_name = os.path.basename(folder) + '_'
+            if file.startswith(base_name) and file.endswith('.zip'):
+                continue
+            zip_file.write(os.path.join(folder, filename))
+
+# TODO:
