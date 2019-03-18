@@ -39,4 +39,4 @@ def backup_to_zip(folder):
 
     print('Done')
 
-backup_to_zip('PythonProjects\\AutomateTheBoringStuffWithPython')
+backup_to_zip('C:\\Users\ogi-8\Desktop\PythonProjects\AutomateTheBoringStuffWithPython')
