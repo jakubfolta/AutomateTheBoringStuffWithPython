@@ -16,14 +16,25 @@ def backup_folder(folder):
 # Create zipfile name with while loop.
     number = 1
     while True:
-        zip_name = os.path.basename(abspath) + '_' + '.zip'
+        zip_name = os.path.basename(abspath) + '_' + str(number) + '.zip'
         if not os.path.exists(zip_name):
             break
         number += 1
 
 # Create zipfile.
+    print('Creating {}'.format(zip_name))
     zip_file = zipfile.ZipFile(zip_name, 'w')
 
 # TODO: Use for loop and os.walk() to add current folder and its files to zipfile.
+    for folder, subfolder, filename in os.walk(folder):
+        print('Adding files in {} folder.'.format(folder))
+        zip_file.write(folder)
+        for file in filename:
+            abspath = os.path.basename(folder)
+            if file.startswith(abspath) + '_' and file.endswith('.zip'):
+                continue
+            zip_file.write(file)
+    zip_file.close()
+
 # TODO: Close zipfile.
 # TODO: Call function.
