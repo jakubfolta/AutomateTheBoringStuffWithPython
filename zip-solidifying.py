@@ -21,7 +21,9 @@ def backup_folder(folder):
             break
         number += 1
 
-# TODO: Create zipfile.
+# Create zipfile.
+    zip_file = zipfile.ZipFile(zip_name, 'w')
+
 # TODO: Use for loop and os.walk() to add current folder and its files to zipfile.
 # TODO: Close zipfile.
 # TODO: Call function.
