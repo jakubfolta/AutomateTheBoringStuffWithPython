@@ -25,7 +25,7 @@ def backup_folder(folder):
     print('Creating {}'.format(zip_name))
     zip_file = zipfile.ZipFile(zip_name, 'w')
 
-# TODO: Use for loop and os.walk() to add current folder and its files to zipfile.
+# Use for loop and os.walk() to add current folder and its files to zipfile.
     for folder, subfolder, filename in os.walk(folder):
         print('Adding files in {} folder.'.format(folder))
         zip_file.write(folder)
@@ -36,5 +36,8 @@ def backup_folder(folder):
             zip_file.write(file)
     zip_file.close()
 
-# TODO: Close zipfile.
-# TODO: Call function.
+# Close zipfile.
+    print('Done')
+
+# Call function.
+backup_folder('C:\Users\ogi-8\Desktop\PythonProjects\AutomateTheBoringStuffWithPython\zip_test')
