@@ -3,6 +3,10 @@
 # zip-drill_up.py - Copies an entire folder and its contents into
 # a ZIP file whose filename increments.
 
+# Import essential modules.
+import os
+import zipfile
+
 # Create a function and set abs path to argument.
 def create_backup(folder):
     abspath_folder = os.path.abspath(folder)
