@@ -19,13 +19,19 @@ def create_backup(folder):
     print('Creating zip file named {}'.format(zip_name))
     zip_file = zipfile.ZipFile(zip_name)
 
-# TODO: Loop through argument path and add folders and files to zip file.
+# Loop through argument path and add folders and files to zip file.
     for folder, subfolders, files in os.walk(folder):
-        folder_base = os
+        folder_base = os.path.basename(folder) + '_'
         print('Adding files in {}.'.format(folder))
         zip_file.write(folder)
         for file in files:
-            zip_file.write()
+            if file.startswith(folder_base) and file.endswith('.zip'):
+                continue
+            zip_file.write(os.path.join(folder, file))
 
-# TODO: Close zip file.
-# TODO: Call function.
+# Close zip file.
+    zip_file.close()
+    print('Done.')
+
+# Call function.
+create_backup('C:\\Users\ogi-8\Desktop\PythonProjects\AutomateTheBoringStuffWithPython\zip_test')
