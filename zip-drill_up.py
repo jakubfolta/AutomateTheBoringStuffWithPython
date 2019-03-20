@@ -16,8 +16,16 @@ def create_backup(folder):
         number += 1
 
 # Create zip file.
+    print('Creating zip file named {}'.format(zip_name))
     zip_file = zipfile.ZipFile(zip_name)
 
 # TODO: Loop through argument path and add folders and files to zip file.
+    for folder, subfolders, files in os.walk(folder):
+        folder_base = os
+        print('Adding files in {}.'.format(folder))
+        zip_file.write(folder)
+        for file in files:
+            zip_file.write()
+
 # TODO: Close zip file.
 # TODO: Call function.
