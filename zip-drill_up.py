@@ -17,11 +17,11 @@ def create_backup(folder):
         zip_name = os.path.basename(abspath_folder) + '_' + str(zip_number) + '.zip'
         if not os.path.exists(zip_name):
             break
-        number += 1
+        zip_number += 1
 
-# Create zip file.
+# Create zip file and set filemode.
     print('Creating zip file named {}'.format(zip_name))
-    zip_file = zipfile.ZipFile(zip_name)
+    zip_file = zipfile.ZipFile(zip_name, 'w')       # Don't forget about filemode!!!
 
 # Loop through argument path and add folders and files to zip file.
     for folder, subfolders, files in os.walk(folder):
