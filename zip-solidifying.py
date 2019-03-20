@@ -30,14 +30,14 @@ def backup_folder(folder):
         print('Adding files in {} folder.'.format(folder))
         zip_file.write(folder)
         for file in filename:
-            abspath = os.path.basename(folder)
-            if file.startswith(abspath) + '_' and file.endswith('.zip'):
+            abspath = os.path.basename(folder) + '_'
+            if file.startswith(abspath) and file.endswith('.zip'):
                 continue
-            zip_file.write(file)
+            zip_file.write(os.path.join(file))
     zip_file.close()
 
 # Close zipfile.
     print('Done')
 
 # Call function.
-backup_folder('C:\Users\ogi-8\Desktop\PythonProjects\AutomateTheBoringStuffWithPython\zip_test')
+backup_folder('C:\\Users\ogi-8\Desktop\PythonProjects\AutomateTheBoringStuffWithPython\zip_test')
