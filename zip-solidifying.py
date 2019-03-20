@@ -33,7 +33,7 @@ def backup_folder(folder):
             abspath = os.path.basename(folder) + '_'
             if file.startswith(abspath) and file.endswith('.zip'):
                 continue
-            zip_file.write(os.path.join(file))
+            zip_file.write(os.path.join(folder, file))
     zip_file.close()
 
 # Close zipfile.
