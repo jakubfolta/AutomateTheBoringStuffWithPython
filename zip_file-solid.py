@@ -31,7 +31,7 @@ def create_backup(folder):
         for file in files:
             if file.startswith(base_name) and file.endswith('.zip'):
                 continue
-            zip_file.write(os.path.join(base_name, file))
+            zip_file.write(os.path.join(folder, file))
     print('Done.')
 
 # Close zipfile.
