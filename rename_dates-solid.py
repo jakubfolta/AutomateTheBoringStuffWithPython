@@ -18,7 +18,7 @@ europ_date_regex = re.compile(r'''^(.*?)    # all text before date
 # Loop through files in given directory and select groups of the match.
 for file in os.listdir('.'):
     match = europ_date_regex.search(file)
-    if match = None:
+    if match == None:
         continue
 
     before_date = match.group(1)
@@ -37,4 +37,5 @@ for file in os.listdir('.'):
 
 # Exchange filenames
     print('Exchange {} to {}'.format(europ_filename, amer_filename))
-    # shutil.move(europ_filename, amer_filename)
+    shutil.move(europ_filename, amer_filename)
+print('Done.')
