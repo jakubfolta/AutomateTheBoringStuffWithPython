@@ -31,9 +31,11 @@ def create_backup(folder):
         for file in files:
             if file.startswith(base_name) and file.endswith('.zip'):
                 continue
-            zip_file.write()
+            zip_file.write(os.path.join(base_name, file))
+    print('Done.')
 
+# Close zipfile.
+    zip_file.close()
 
-
-# TODO: Close zipfile.
-# TODO: Call function.
+# Call function.
+create_backup('C:\\Users\ogi-8\Desktop\PythonProjects\AutomateTheBoringStuffWithPython\zip_test')
