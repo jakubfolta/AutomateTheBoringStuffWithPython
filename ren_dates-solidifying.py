@@ -8,7 +8,7 @@ import re
 import shutil
 
 # Create regex to find european date format.
-date_pattern = re.compile(r'''^(.*?) # all text before date
+date_pattern = re.compile(r'''^(.*?)  # all text before date
     ((0|1|2|3)?\d)-                   # one or two digits for a day
     ((0|1)?\d)-                       # one or two digits for a month
     ((19|20)\d\d)                     # four digits for a year
