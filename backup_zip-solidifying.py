@@ -9,9 +9,6 @@ import os
 # Create function.
 def create_zipfile(folder):
 
-# Create abspath for folder path.
-    folder = os.path.abspath(folder)
-
 # Create zipfile name.
     number = 1
     while True:
