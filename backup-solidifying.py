@@ -9,11 +9,18 @@ import zipfile
 
 # Set directory to backup.
 dir_to_backup = r'C:\Users\ogi-8\Desktop\PythonProjects\AddDigits'
+dir_basename = os.path.basename(dir_to_backup)
 
-# TODO: Walk through directory with for loop and os.walk().
+# Walk through directory with for loop and os.walk().
 for file in os.walk(dir_to_check):
-    
 
 # TODO: Set new filename for backup.
+    num = 1
+    while True:
+        zip_filename = dir_basename + '_' + str(num) + '.zip'
+        if not os.path.exists(zip_filename):
+            break
+        num +=1
+
 # TODO:
 # TODO:
