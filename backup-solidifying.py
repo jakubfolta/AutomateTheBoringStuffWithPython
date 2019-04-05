@@ -14,7 +14,7 @@ dir_basename = os.path.basename(dir_to_backup)
 # Walk through directory with for loop and os.walk().
 for file in os.walk(dir_to_check):
 
-# TODO: Set new filename for backup.
+# Set new filename for backup.
     num = 1
     while True:
         zip_filename = dir_basename + '_' + str(num) + '.zip'
@@ -22,5 +22,7 @@ for file in os.walk(dir_to_check):
             break
         num +=1
 
-# TODO:
-# TODO:
+# TODO: Create zip file.
+
+
+# TODO: Backup folder and files.
