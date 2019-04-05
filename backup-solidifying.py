@@ -7,14 +7,12 @@
 import os
 import zipfile
 
-# Set directory to backup.
-dir_to_backup = r'C:\Users\ogi-8\Desktop\PythonProjects\AddDigits'
-dir_basename = os.path.basename(dir_to_backup)
+# Create function.
+def create_zipfile(directory):
 
-# Walk through directory with for loop and os.walk().
-for folder, subfolder, files in os.walk(dir_to_check):
-    folder_base = os.path.basename(folder)
-    
+# Set directory to backup.
+    dir_basename = os.path.basename(directory)
+
 # Set new filename for backup.
     num = 1
     while True:
@@ -23,12 +21,25 @@ for folder, subfolder, files in os.walk(dir_to_check):
             break
         num +=1
 
-# Create zip file.
-    print('Creating zip file: "{}"'.format(zip_filename))
-    zip_file = zipfile.ZipFile(zip_filename, 'w')
+# Walk through directory with for loop and os.walk().
+    for folder, subfolder, files in os.walk(directory):
+        folder_base = os.path.basename(folder)
 
-# TODO: Backup folder and files.
-    print('Adding files in "{}"'.format(folder_base))
-    zip_file.write(folder)
-    for file in files:
-        if not
+# Create zip file.
+        print('Creating zip file: "{}"'.format(zip_filename))
+        zip_file = zipfile.ZipFile(zip_filename, 'w')
+
+# Backup folder.
+        print('Adding files in "{}"'.format(folder_base))
+        zip_file.write(folder)
+# Backup files.
+        for file in files:
+            if file.endswith('.zip'):
+                continue
+            print('Adding file: "{}"'.format(file))
+            zip_file.write(os.path.join(folder, file))
+        zip_file.close()
+    else:
+        print('Backup complete!')
+
+create_zipfile(r'C:\Users\ogi-8\Desktop\PythonProjects\AddDigits')
