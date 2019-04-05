@@ -12,8 +12,9 @@ dir_to_backup = r'C:\Users\ogi-8\Desktop\PythonProjects\AddDigits'
 dir_basename = os.path.basename(dir_to_backup)
 
 # Walk through directory with for loop and os.walk().
-for file in os.walk(dir_to_check):
-
+for folder, subfolder, files in os.walk(dir_to_check):
+    folder_base = os.path.basename(folder)
+    
 # Set new filename for backup.
     num = 1
     while True:
@@ -22,7 +23,12 @@ for file in os.walk(dir_to_check):
             break
         num +=1
 
-# TODO: Create zip file.
-
+# Create zip file.
+    print('Creating zip file: "{}"'.format(zip_filename))
+    zip_file = zipfile.ZipFile(zip_filename, 'w')
 
 # TODO: Backup folder and files.
+    print('Adding files in "{}"'.format(folder_base))
+    zip_file.write(folder)
+    for file in files:
+        if not
