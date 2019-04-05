@@ -20,14 +20,14 @@ def create_zipfile(directory):
         if not os.path.exists(zip_filename):
             break
         num +=1
+# Create zip file.
+    print('Creating zip file: "{}"'.format(zip_filename))
+    zip_file = zipfile.ZipFile(zip_filename, 'w')
+
 
 # Walk through directory with for loop and os.walk().
     for folder, subfolder, files in os.walk(directory):
         folder_base = os.path.basename(folder)
-
-# Create zip file.
-        print('Creating zip file: "{}"'.format(zip_filename))
-        zip_file = zipfile.ZipFile(zip_filename, 'w')
 
 # Backup folder.
         print('Adding files in "{}"'.format(folder_base))
@@ -38,8 +38,8 @@ def create_zipfile(directory):
                 continue
             print('Adding file: "{}"'.format(file))
             zip_file.write(os.path.join(folder, file))
-        zip_file.close()
     else:
         print('Backup complete!')
+    zip_file.close()
 
 create_zipfile(r'C:\Users\ogi-8\Desktop\PythonProjects\AddDigits')
