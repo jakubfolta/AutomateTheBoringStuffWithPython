@@ -25,20 +25,22 @@ def create_zipfile(directory):
     print('Creating "{}"'.format(zip_name))
     zip_file = zipfile.ZipFile(zip_name, 'w')
 
-# TODO: Walk through directory tree in for loop.
+# Walk through directory tree in for loop.
     for folder, subfolder, files in os.walk(directory):
 
-# TODO: Add folder to zipfile.
+# Add folder to zipfile.
         if files:
             print('Adding files in "{}"'.format(folder))
             zip_file.write(folder)
             print('Adding:')
-# TODO: Add files to zipfile.
+
+# Add files to zipfile.
             for file in files:
                 if file.endswith('.zip'):
                     continue
                 print(file)
-# TODO: Close zipfile.
+
+# Close zipfile.
     else:
         print('Backup completed!')
     zip_file.close()
