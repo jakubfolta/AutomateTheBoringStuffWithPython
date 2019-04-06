@@ -29,14 +29,16 @@ def create_zipfile(directory):
     for folder, subfolder, files in os.walk(directory):
 
 # TODO: Add folder to zipfile.
-        print('Adding files in "{}"'.format(folder))
-        zip_file.write(folder)
-        print('Adding:')
+        if files:
+            print('Adding files in "{}"'.format(folder))
+            zip_file.write(folder)
+            print('Adding:')
 # TODO: Add files to zipfile.
-        for file in files:
-            if file.endswith('.zip'):
-                continue
-            print(file)
+            for file in files:
+                if file.endswith('.zip'):
+                    continue
+                print(file)
 # TODO: Close zipfile.
+
 
 create_zipfile(r'C:\Users\ogi-8\Desktop\PythonProjects\AddDigits\Sample_zip')
