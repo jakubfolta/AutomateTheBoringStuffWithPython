@@ -39,6 +39,8 @@ def create_zipfile(directory):
                     continue
                 print(file)
 # TODO: Close zipfile.
-
+    else:
+        print('Backup completed!')
+    zip_file.close()
 
 create_zipfile(r'C:\Users\ogi-8\Desktop\PythonProjects\AddDigits\Sample_zip')
