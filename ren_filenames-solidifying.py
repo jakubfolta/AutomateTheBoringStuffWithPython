@@ -12,8 +12,8 @@ dir_to_check = r'C:\Users\ogi-8\Desktop\PythonProjects\AutomateTheBoringStuffWit
 
 # Create date format regex.
 amer_format_regex = re.compile(r'''^(.*?)     # all text before date
-    ((0|1)?\d)                                # one or two digits for a month
-    ((0|1|2|3)?\d)                            # one or two digits for a day
+    ((0|1)?\d)-                                # one or two digits for a month
+    ((0|1|2|3)?\d)-                            # one or two digits for a day
     ((19|20)\d\d)                             # four digits for a year
     (.*?)$                                    # all text after date
 ''', re.VERBOSE)
@@ -32,10 +32,10 @@ for file in os.listdir(dir_to_check):
     after_date = match.group(8)
 
 # Set abs paths to old and new filename.
-    europ_filename = before_date + day + month + year + after_date
+    europ_filename = before_date + day + '-' + month + '-' + year + after_date
     amer_filename_abs = os.path.join(dir_to_check, file)
     europ_filename_abs = os.path.join(dir_to_check, europ_filename)
 
 # Change filename to proper date format.
-    print('Change this "{}" filename to this "{}"'.format(amer_filename_abs, europ_date_abs))
+    print('Change this filename "{}"\n to this\n "{}"\n'.format(amer_filename_abs, europ_filename_abs))
     #shutil.move(amer_filename_abs, europ_filename_abs)
