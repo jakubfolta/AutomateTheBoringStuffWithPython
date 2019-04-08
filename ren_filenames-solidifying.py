@@ -31,11 +31,12 @@ for file in os.listdir(dir_to_check):
     year = match.group(6)
     after_date = match.group(8)
 
-# TODO: Set abs paths to old and new filename.
+# Set abs paths to old and new filename.
 europ_filename = before_date + day + month + year + after_date
 amer_filename_abs = os.path.join(dir_to_check, file)
-europ_date_ = 
+europ_date_abs = os.path.join(dir_to_check, europ_filename)
 
 # TODO: Change filename to proper date format.
-
+print('Change this "{}" filename to this "{}"'.format(amer_filename_abs, europ_date_abs))
+shutil
 # TODO:
