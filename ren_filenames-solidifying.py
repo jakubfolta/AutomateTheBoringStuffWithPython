@@ -38,5 +38,5 @@ europ_date_abs = os.path.join(dir_to_check, europ_filename)
 
 # TODO: Change filename to proper date format.
 print('Change this "{}" filename to this "{}"'.format(amer_filename_abs, europ_date_abs))
-shutil
+shutil.move
 # TODO:
