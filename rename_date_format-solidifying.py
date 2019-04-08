@@ -2,8 +2,14 @@
 
 '''rename-date-format-solidifying.py - Rename filenames with american date format to european date format.'''
 
-# TODO: Import essential modules.
+# Import essential modules.
+import os
+import re
+import shutil
+
 # TODO: Create american date format regex.
+
+
 # TODO: Set directory to check.
 # TODO: Create for loop and use os.listdir() to check files inside directory.
 # TODO: Get groups from matches.
