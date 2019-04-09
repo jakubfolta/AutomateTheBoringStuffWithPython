@@ -15,11 +15,18 @@ amer_date_format = re.compile(r'''^(.*?)    # all text before date
     (.*?)$                                  # all text after date
 ''', re.VERBOSE)
 
-# TODO: Set directory to check.
+# Set directory to check.
 dir_to_check = r'C:\Users\ogi-8\Desktop\PythonProjects\AutomateTheBoringStuffWithPython'
 
-# TODO: Create for loop and use os.listdir() to check files inside directory.
+# Create for loop and use os.listdir() to check files inside directory.
+for file in os.listdir(dir_to_check):
+    match = amer_date_format.search(file)
+    if match == None:
+        continue
+
 # TODO: Get groups from matches.
+
+
 # TODO: Create european date format from matched groups.
 # TODO: Set proper absolute paths to exchange.
 # TODO: Print and change the filename using shutil module.
