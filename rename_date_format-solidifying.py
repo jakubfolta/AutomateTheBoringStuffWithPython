@@ -16,7 +16,7 @@ amer_date_format = re.compile(r'''^(.*?)    # all text before date
 ''', re.VERBOSE)
 
 # TODO: Set directory to check.
-
+dir_to_check = r'C:\Users\ogi-8\Desktop\PythonProjects\AutomateTheBoringStuffWithPython'
 
 # TODO: Create for loop and use os.listdir() to check files inside directory.
 # TODO: Get groups from matches.
