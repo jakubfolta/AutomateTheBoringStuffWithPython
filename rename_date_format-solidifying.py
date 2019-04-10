@@ -24,9 +24,20 @@ for file in os.listdir(dir_to_check):
     if match == None:
         continue
 
-# TODO: Get groups from matches.
+# Get groups from matches.
+    before_date = match.group(1)
+    month = match.group(2)
+    day = match.group(4)
+    year = match.group(6)
+    after_date = match.group(8)
 
+# Create european date format from matched groups.
+    europ_filename = before_date + day + '-' + month + '-' + year + after_date
 
-# TODO: Create european date format from matched groups.
-# TODO: Set proper absolute paths to exchange.
-# TODO: Print and change the filename using shutil module.
+# Set proper absolute paths to exchange.
+    europ_filename_abspath = os.path.join(dir_to_check, europ_filename)
+    amer_filename_abspath = os.path.join(dir_to_check, file)
+
+# Print and change the filename using shutil module.
+    print('Change this filename "{}"\nto this\n"{}"'.format(amer_filename_abspath, europ_filename_abspath))
+    #shutil.move(amer_filename_abspath, europ_filename_abspath)
