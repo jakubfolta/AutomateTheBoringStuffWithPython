@@ -7,6 +7,7 @@ import traceback
 try:
     raise Exception('This is the error message!')
 except:
+    with 
     error_file = open('error_info.txt', 'w')
     error_file.write(traceback.format_exc())
     error_file.close()
