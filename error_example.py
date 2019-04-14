@@ -14,5 +14,7 @@ except:
 
 door_status = 'open'
 assert door_status == 'open', 'Obey, door must be open!'
-door_status = 'close'
-assert
+print(assert)
+
+# door_status = 'close'
+# assert door_status == 'open', 'Obey, door must be open!'
