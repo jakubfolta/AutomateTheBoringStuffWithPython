@@ -11,3 +11,8 @@ except:
     with open('error_info.txt', 'w') as error_file:
         error_file.write(traceback.format_exc())
     print('The traceback info was written to error_info.txt')
+
+door_status = 'open'
+assert door_status == 'open', 'Obey, door must be open!'
+door_status = 'close'
+assert
