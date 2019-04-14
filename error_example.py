@@ -13,7 +13,9 @@ except:
     print('The traceback info was written to error_info.txt')
 
 door_status = 'open'
-assert door_status == 'open', 'Obey, door must be open!''
+assert door_status == 'open', 'Obey, door must be open!'
+door_status = 'close'
 
-# door_status = 'close'
-# assert door_status == 'open', 'Obey, door must be open!'
+
+
+assert door_status == 'open', 'Obey, door must be open!'
