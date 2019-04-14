@@ -3,6 +3,7 @@ def spam():
 def bacon():
     raise Exception('This is an exception!')
 
+
 import traceback
 try:
     raise Exception('This is the error message!')
