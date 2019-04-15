@@ -1,6 +1,6 @@
 import logging
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s\
- - %(message)s')
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s\
+ - %(levelname)s - %(message)s')
 #logging.disable(logging.CRITICAL)
 
 logging.debug('Start of the program.')
@@ -18,4 +18,4 @@ print(factorial(5))
 logging.debug('End of program.')
 
 # logging.basicConfig(level = logging.DEBUG, format = '%(asctime)\
-#  - %(levelname) - %(message)s')
+# - %(levelname) - %(message)s')
