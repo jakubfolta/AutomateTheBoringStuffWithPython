@@ -17,4 +17,5 @@ def factorial(n):
 print(factorial(5))
 logging.debug('End of program.')
 
-logging.basicConfig(level = logging.DEBUG, format = '%(asctime) - %(levelname)'
+logging.basicConfig(level = logging.DEBUG, format = '%(asctime)\
+ - %(levelname) - %(message)s')
