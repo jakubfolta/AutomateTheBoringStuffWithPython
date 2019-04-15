@@ -1,5 +1,5 @@
 import logging
-logging.basicConfig(level=logging.ERROR, format='%(asctime)s\
+logging.basicConfig(filename = 'my_program_log.txt', level=logging.DEBUG, format='%(asctime)s\
  - %(levelname)s - %(message)s')
 #logging.disable(logging.CRITICAL)
 
@@ -19,3 +19,11 @@ logging.debug('End of program.')
 
 # logging.basicConfig(level = logging.DEBUG, format = '%(asctime)\
 # - %(levelname) - %(message)s')
+
+'''Logging levels:
+logging.debug()
+logging.info()
+logging.warning()
+logging.error()
+logging.critical()
+'''
