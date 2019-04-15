@@ -1,7 +1,6 @@
 import logging
-# logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s\
-#  - %(message)s')
-logging.basicConfig(level=logging.DEBUG, format = '{} - {} - {}'.format((asctime), levelname, message))
+logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s -fgjhf %(levelname)s\
+ - %(message)s')
 #logging.disable(logging.CRITICAL)
 
 logging.debug('Start of the program.')
