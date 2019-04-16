@@ -6,3 +6,7 @@ for i in range(1, 1001):
     if i == 500:
         print('Halfway done!')
 print('Heads came up ' + str(heads) + ' times.')
+
+spam = 7
+
+assert spam >= 10, 'Spam must be greater than 10!'
