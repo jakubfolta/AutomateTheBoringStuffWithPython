@@ -12,7 +12,9 @@ print('Heads came up ' + str(heads) + ' times.')
 # assert spam >= 10, 'Spam must be greater than 10!'
 
 eggs = 'hello'
-bacon = 'hehllo'
+bacon = 'HEfllo'
 
 assert eggs.lower() != bacon.lower(), 'Strings can\'t have the same\
  characters, cases don\'t matter! '
+
+assert False, 'This assertion always triggers!'
