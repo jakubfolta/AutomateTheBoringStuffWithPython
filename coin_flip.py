@@ -6,7 +6,13 @@ for i in range(1, 1001):
     if i == 500:
         print('Halfway done!')
 print('Heads came up ' + str(heads) + ' times.')
+#
+# spam = 7
+#
+# assert spam >= 10, 'Spam must be greater than 10!'
 
-spam = 7
+eggs = 'hello'
+bacon = 'HEllo'
 
-assert spam >= 10, 'Spam must be greater than 10!'
+assert eggs.lower() != bacon.lower(), 'Strings can\'t have the same\
+ characters, cases don\'t matter! '
