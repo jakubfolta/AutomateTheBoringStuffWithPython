@@ -16,7 +16,7 @@ toss = 'heads' if toss == 1 else 'tails'
 logging.info('Toss = ' + toss)
 
 guess = ''
-while guess not in ('heads', 'tails'):
+while guess not in ('heads', 'tails') or num != 2:
     logging.debug('Enter the while loop.')
     try:
         print('Guess the coin toss! Enter "heads" or "tails":')
@@ -25,8 +25,7 @@ while guess not in ('heads', 'tails'):
         logging.info('Toss is a ' + str(toss))
     except:
         continue
-
-        print('You got it!') if toss == guess else print('Nope! Guess again!')
+    print('You got it!') if toss == guess else print('Nope! Guess again!')
 else:
     print('Nope. You are really bad at this game!')
 
