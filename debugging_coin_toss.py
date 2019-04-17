@@ -24,6 +24,8 @@ while guess not in ('heads', 'tails') or num != 2:
     logging.info('Toss is a ' + str(toss))
     num += 1
     logging.debug('num ' + str(num))
-    print('You got it!') break  if toss == guess else print('Nope! Wrong answer!')
+    print('You got it!') if toss == guess else print('Nope! Wrong answer!')
+    if toss == guess:
+        break
 else:
     print('You are really bad at this game!')
