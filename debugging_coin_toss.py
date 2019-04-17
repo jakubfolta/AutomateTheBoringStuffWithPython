@@ -6,8 +6,8 @@ format = '%(asctime)s - %(levelname)s - %(message)s')
 
 guess = ''
 toss = random.randint(0, 1) # 0 is tails, 1 is heads
-True if toss == 1 else False
-logging.info('Toss = ' + str(toss))
+toss_name = 'heads' if toss == 1 else 'tails'
+logging.info('Toss = ' + toss_name)
 while guess not in ('heads', 'tails'):
     logging.debug('Enter the while loop.')
     try:
