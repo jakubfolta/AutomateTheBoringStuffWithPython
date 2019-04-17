@@ -1,3 +1,9 @@
+#! python3
+
+'''debugging_coin_toss.py - Simple coin toss game, the player has\
+two guesses(simple game). The program has several bugs.\
+Find bugs that keep the program from working correctly.'''
+
 import random
 import logging
 
@@ -9,23 +15,21 @@ toss = 'heads' if toss == 1 else 'tails'
 
 logging.info('Toss = ' + toss)
 
-def check_guess():
-    guess = ''
-    while guess not in ('heads', 'tails'):
-        logging.debug('Enter the while loop.')
-        try:
-            print('Guess the coin toss! Enter "heads" or "tails":')
-            guess = input()
-            guess == 'heads' or guess == 'tails'
-            logging.info('Toss is a ' + str(toss))
-        except:
-            continue
-    return guess
+guess = ''
+while guess not in ('heads', 'tails'):
+    logging.debug('Enter the while loop.')
+    try:
+        print('Guess the coin toss! Enter "heads" or "tails":')
+        guess = input()
+        guess == 'heads' or guess == 'tails'
+        logging.info('Toss is a ' + str(toss))
+    except:
+        continue
 
-if toss == check_guess():
-    print('You got it!')
-else:
-    print('Nope! Guess again!')
+    if toss == guess:
+        print('You got it!')
+    else:
+        print('Nope! Guess again!')
     if toss == check_guess():
        print('You got it!')
     else:
