@@ -17,9 +17,7 @@ logging.info('Toss is ' + str(toss))
 while guess not in ('heads', 'tails'):
     print('Guess the coin toss! Enter heads or tails:')
     guess = input()
-    if toss == guess:
-        print('You got it!')
-        logging.info('Guessed, out of loop.')
+    if toss == guess: print('You got it!'), logging.info('Guessed, out of loop.') 
     else:
         logging.info('Second guess in else.')
         print('Nope! Guess again!')
