@@ -20,7 +20,6 @@ while guess not in ('heads', 'tails'):
     if toss == guess:
         print('You got it!')
         logging.info('Guessed, out of loop.')
-        break
     else:
         logging.info('Second guess in else.')
         print('Nope! Guess again!')
