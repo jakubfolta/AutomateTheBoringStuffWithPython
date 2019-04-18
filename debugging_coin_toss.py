@@ -21,11 +21,11 @@ while guess not in ('heads', 'tails') or num != 2:
     logging.debug('Enter the while loop.')
     print('Guess the coin toss! Enter "heads" or "tails":')
     guess = input()
-    logging.info('Toss is a ' + str(toss))
-    num += 1
-    logging.debug('num ' + str(num))
     print('You got it!') if toss == guess else print('Nope! Wrong answer!')
     if toss == guess:
         break
+    logging.info('Toss is a ' + str(toss))
+    num += 1
+    logging.debug('num ' + str(num))
 else:
     print('You are really bad at this game!')
