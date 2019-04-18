@@ -18,12 +18,12 @@ while guess not in ('heads', 'tails'):
     print('Guess the coin toss! Enter heads or tails:')
     guess = input()
     if toss == guess:
-    print('You got it!')
-    break
+        print('You got it!')
+        logging.info('Guessed, out of loop.')
+        break
     else:
+        logging.info('Second guess in else.')
         print('Nope! Guess again!')
-        guesss = input()     
+        guesss = input()
     if toss == guess:
-       print('You got it!')
-    else:
-        print('Nope. You are really bad at this game.')
+       print('You got it!') if toss == guess else print('Nope. You are really bad at this game.')
