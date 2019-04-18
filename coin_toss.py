@@ -25,5 +25,4 @@ while guess not in ('heads', 'tails'):
         logging.info('Second guess in else.')
         print('Nope! Guess again!')
         guesss = input()
-    if toss == guess:
-       print('You got it!') if toss == guess else print('Nope. You are really bad at this game.')
+        print('You got it!') if toss == guess else print('Nope. You are really bad at this game.')
