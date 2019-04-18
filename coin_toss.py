@@ -8,7 +8,7 @@ import random
 import logging
 
 logging.basicConfig(level = logging.DEBUG, format = '%(asctime)s, %(levelname)s, %(message)s')
-logging.disable(logging.INFO)
+#logging.disable(logging.INFO)
 
 guess = ''
 toss = random.randint(0, 1) # 0 is tails, 1 is heads
