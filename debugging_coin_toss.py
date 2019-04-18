@@ -15,9 +15,10 @@ toss = 'heads' if toss == 1 else 'tails'
 
 logging.info('Toss = ' + toss)
 
+sides = ['heads', 'tails']
 guess = ''
 num = 1
-while guess not in ('heads', 'tails') or num != 2:
+while num != 2:
     logging.debug('Enter the while loop.')
     print('Guess the coin toss! Enter "heads" or "tails":')
     guess = input()
