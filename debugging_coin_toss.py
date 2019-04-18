@@ -17,16 +17,18 @@ logging.info('Toss = ' + toss)
 
 sides = ['heads', 'tails']
 guess = ''
-num = 1
+num = 0
 while num != 2:
     logging.debug('Enter the while loop.')
     print('Guess the coin toss! Enter "heads" or "tails":')
     guess = input()
+    if guess not in sides:
+        continue
     print('You got it!') if toss == guess else print('Nope! Wrong answer!')
     if toss == guess:
+        print('Congratulations!')
         break
-    logging.info('Toss is a ' + str(toss))
     num += 1
-    logging.debug('num ' + str(num))
+    logging.info('Toss is a ' + str(toss))
 else:
     print('You are really bad at this game!')
