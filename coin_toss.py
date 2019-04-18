@@ -8,16 +8,22 @@ import random
 import logging
 
 logging.basicConfig(level = logging.DEBUG, format = '%(asctime)s, %(levelname)s, %(message)s')
+logging.disable(logging.INFO)
 
 guess = ''
 toss = random.randint(0, 1) # 0 is tails, 1 is heads
 toss = 'tails' if toss==0 else 'heads'
 logging.info('Toss is ' + str(toss))
+sides = ['heads', 'tails']
 
-while guess not in ('heads', 'tails'):
+while guess not in sides:
     print('Guess the coin toss! Enter heads or tails:')
     guess = input()
-    if toss == guess: print('You got it!'), logging.info('Guessed, out of loop.') 
+
+    if guess not in sides: continue
+
+    if toss == guess: print('You got it!'), logging.info('Guessed, out of loop.')
+
     else:
         logging.info('Second guess in else.')
         print('Nope! Guess again!')
