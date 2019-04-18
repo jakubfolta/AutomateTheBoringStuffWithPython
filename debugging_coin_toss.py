@@ -31,4 +31,5 @@ while num != 2:
     num += 1
     logging.info('Toss is a ' + str(toss))
 else:
+    logging.info('Out of loop - else')
     print('You are really bad at this game!')
