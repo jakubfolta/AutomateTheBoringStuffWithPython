@@ -11,6 +11,9 @@ logging.basicConfig(level = logging.DEBUG, format = '%(asctime)s, %(levelname)s,
 
 guess = ''
 toss = random.randint(0, 1) # 0 is tails, 1 is heads
+toss = 'tails' if toss==0 else 'heads'
+logging.info('Toss is ' + str(toss))
+
 while guess not in ('heads', 'tails'):
     print('Guess the coin toss! Enter heads or tails:')
     guess = input()
