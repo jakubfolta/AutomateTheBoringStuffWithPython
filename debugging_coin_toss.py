@@ -9,7 +9,7 @@ import logging
 
 logging.basicConfig(level = logging.DEBUG,\
 format = '%(asctime)s - %(levelname)s - %(message)s')
-
+logging.disable(logging.CRITICAL)
 toss = random.randint(0, 1) # 0 is tails, 1 is heads
 toss = 'heads' if toss == 1 else 'tails'
 
