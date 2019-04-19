@@ -23,12 +23,10 @@ while guess not in sides:
         logging.info('Guess not in sides! Again!')
         continue
 
-    print('You got it!') if toss == guess else print('Nope! Guess again!')
-    if toss == guess: print('Congratulations'), logging.info('Toss guessed!')
-    else:
-        guesss = input()
-        print('You got it!') if toss == guess else print('Nope. You are really bad at this game.')
-    if toss == guess:
-       print('You got it!')
-    else:
+    print('You got it! Congratulations!') if toss == guess else print('Nope! Guess again!')
+
+    logging.info('One more try.')
+    guesss = input()
+    print('You got it! Congratulations!') if toss == guess else print('Nope. You are really bad at this game.')
+    
 logging.info('Out of loop.')
