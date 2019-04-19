@@ -14,10 +14,15 @@ sides = ['heads', 'tails']
 toss = random.randint(0,1)
 toss = 'tails' if toss == 0 else 'heads'
 
-while toss not in sides:
+while guess not in sides:
     logging.info('Enter the while loop.')
     print('Guess the coin toss! Enter heads or tails:')
     guess = input()
+
+    if guess not in sides:
+        logging.info('Guess not in sides! Again!')
+        continue
+
     print('You got it!') if toss == guess else print('Nope! Guess again!')
     if toss == guess: print('Congratulations'), logging.info('Toss guessed!')
     else:
