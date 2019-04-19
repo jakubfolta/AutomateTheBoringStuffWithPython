@@ -19,10 +19,11 @@ while toss not in sides:
     print('Guess the coin toss! Enter heads or tails:')
     guess = input()
     print('You got it!') if toss == guess else print('Nope! Guess again!')
-    if toss == guess: print('Congratulations')
+    if toss == guess: print('Congratulations'), logging.info('Toss guessed!')
     else:
         guesss = input()
         print('You got it!') if toss == guess else print('Nope. You are really bad at this game.')
     if toss == guess:
        print('You got it!')
     else:
+logging.info('Out of loop.')
