@@ -8,7 +8,7 @@ import random
 import logging
 
 logging.basicConfig(level = logging.DEBUG, format = '%(asctime)s, %(levelname)s, %(message)s')
-#logging.disable(logging.INFO)
+logging.disable(logging.INFO)
 
 guess = ''
 chance = 0
@@ -24,11 +24,11 @@ while guess not in sides or chance != 2:
     if guess not in sides: continue
 
     print('You got it!') if toss == guess else print('Nope!')
+    if toss == guess: break
 
-    logging.info('Guessed, out of loop.')
-
-    else:
-        logging.info('Second guess in else.')
-
-        guess = input()
-        print('You got it!') if toss == guess else print('Nope. You are really bad at this game.')
+    chance += 1
+    logging.info('{} chance.'.format(chance))
+    continue
+else:
+    print('Sorry mate, try again if you dare to.')
+logging.info('Guessed, out of loop.')
