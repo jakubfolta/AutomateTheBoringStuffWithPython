@@ -7,7 +7,7 @@ Find bugs that keep the program from working correctly.---FINISHED'''
 import random
 import logging
 
-logging.basicConfig(level = logging.WARNING, format = '%(asctime)s, %(levelname)s, %(message)s')
+logging.basicConfig(level = logging.INFO, format = '%(asctime)s, %(levelname)s, %(message)s')
 
 guess = ''
 chance = 0
@@ -26,9 +26,18 @@ while guess not in sides or chance != 2:
         continue
 
     print('You got it! Congratulations!') if toss == guess else print('Nope! Guess again!')
-    
+    if toss == guess:
+        break
+    chance += 1
+
     logging.info('One more try.')
-    guesss = input()
+    guess = input()
+
+    if guess not in sides:
+        logging.info('Guess not in sides! Again!')
+        continue
+
     print('You got it! Congratulations!') if toss == guess else print('Nope. You are really bad at this game.')
+    chance += 1
 
 logging.info('Out of loop.')
