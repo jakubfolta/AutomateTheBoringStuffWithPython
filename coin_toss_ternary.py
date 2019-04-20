@@ -31,6 +31,8 @@ while guess not in sides or chance != 2:
     chance += 1
     logging.info('It\'s {} chance.'.format(chance))
     continue
+else:
+    print('I\'m sorry... Try again!')
     # logging.info('One more try.')
     # guess = input()
     #
