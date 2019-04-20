@@ -25,19 +25,20 @@ while guess not in sides or chance != 2:
         logging.info('Guess not in sides! Again!')
         continue
 
-    print('You got it! Congratulations!') if toss == guess else print('Nope! Guess again!')
+    print('You got it! Congratulations!') if toss == guess else print('Nope!')
     if toss == guess:
         break
     chance += 1
-
-    logging.info('One more try.')
-    guess = input()
-
-    if guess not in sides:
-        logging.info('Guess not in sides! Again!')
-        continue
-
-    print('You got it! Congratulations!') if toss == guess else print('Nope. You are really bad at this game.')
-    chance += 1
+    logging.info('It\'s {} chance.'.format(chance))
+    continue
+    # logging.info('One more try.')
+    # guess = input()
+    #
+    # if guess not in sides:
+    #     logging.info('Guess not in sides! Again!')
+    #     continue
+    #
+    # print('You got it! Congratulations!') if toss == guess else print('Nope. You are really bad at this game.')
+    # chance += 1
 
 logging.info('Out of loop.')
