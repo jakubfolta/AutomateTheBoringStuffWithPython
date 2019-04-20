@@ -8,12 +8,13 @@ import random
 import logging
 
 logging.basicConfig(level = logging.INFO, format = '%(asctime)s, %(levelname)s, %(message)s')
+logging.disable(logging.INFO)
 
 guess = ''
 chance = 0
 sides = ['heads', 'tails']
 toss = random.randint(0,1)
-toss = 'tails' if toss == 0 else 'heads'
+toss = 'tails' if toss == 0 else 'heads' # Ternary operator
 logging.info('Toss is {}.'.format(toss))
 
 while guess not in sides or chance != 2:
