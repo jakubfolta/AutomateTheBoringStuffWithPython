@@ -14,7 +14,7 @@ chance = 0
 sides = ['heads', 'tails']
 toss = random.randint(0,1)
 toss = 'tails' if toss == 0 else 'heads'
-
+logging.info('Toss is {}.'.format(toss))
 
 while guess not in sides or chance != 2:
     logging.info('Enter the while loop.')
@@ -33,14 +33,4 @@ while guess not in sides or chance != 2:
     continue
 else:
     print('I\'m sorry... Try again!')
-    # logging.info('One more try.')
-    # guess = input()
-    #
-    # if guess not in sides:
-    #     logging.info('Guess not in sides! Again!')
-    #     continue
-    #
-    # print('You got it! Congratulations!') if toss == guess else print('Nope. You are really bad at this game.')
-    # chance += 1
-
 logging.info('Out of loop.')
