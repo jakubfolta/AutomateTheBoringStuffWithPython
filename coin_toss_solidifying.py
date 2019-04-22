@@ -10,7 +10,7 @@ import random
 import logging
 
 logging.basicConfig(level = logging.DEBUG, format = '%(asctime)s, %(levelname)s, %(message)s')
-#logging.disable(logging.WARNING)
+logging.disable(logging.WARNING)
 
 # Set the sides of coin.
 sides = ['heads', 'tails']
