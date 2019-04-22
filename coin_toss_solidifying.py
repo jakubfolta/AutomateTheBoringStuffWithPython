@@ -17,22 +17,24 @@ sides = ['heads', 'tails']
 
 # Set the coin toss name, number of guesses and guess variable - ternary operator.
 toss = random.randint(0, 1) # 0 is heads, 1 is tails
-toss = heads if toss == 0 else tails
+toss = 'heads' if toss == 0 else 'tails'
 logging.info('Toss is {}.'.format(toss))
 number = 0
 guess = ''
 
-# TODO: Use while loop to give two guesses and check if input is a proper name.
+# Use while loop to give two guesses and check if input is a proper name.
 while guess not in sides or number != 2:
     logging.info('Enter the loop.')
     print('Guess, is it "heads" or "tails"?')
     guess = input()
     logging.info('Guess is {}'.format(guess))
     if guess not in sides:
+        logging.info('Guess not in sides!')
         continue
     print('You got it!') if guess == toss else print('Nope!')
     if guess == toss:
         break
     number += 1
 else:
-    print
+    logging.info('Out of loop, not guessed!')
+    print('Sorry, try again!')
