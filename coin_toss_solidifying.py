@@ -15,8 +15,19 @@ logging.basicConfig(level = logging.DEBUG, format = '%(asctime)s, %(levelname)s,
 # Set the sides of coin.
 sides = ['heads', 'tails']
 
-# Set the coin toss and sidename - ternary operator.
+# Set the coin toss name, number of guesses and guess variable - ternary operator.
 toss = random.randint(0, 1) # 0 is heads, 1 is tails
 toss = heads if toss == 0 else tails
+number = 0
+guess = ''
 
 # TODO: Use while loop to give two guesses and check if input is a proper name.
+while guess not in sides or number != 2:
+    print('Guess, is it "heads" or "tails"?')
+    guess = input()
+    if guess not in sides:
+        continue
+    print('You got it!') if guess == toss else print('Nope!')
+    if guess == toss:
+        break
+    number += 1
