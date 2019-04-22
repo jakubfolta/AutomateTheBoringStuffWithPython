@@ -5,13 +5,18 @@
 two guesses(simple game). The program has several bugs.\
 Find bugs that keep the program from working correctly.'''
 
-# TODO: Import essential modules.
+# Import essential modules.
 import random
 import logging
 
 logging.basicConfig(level = logging.DEBUG, format = '%(asctime)s, %(levelname)s, %(message)s')
 #logging.disable(logging.WARNING)
 
-# TODO: Set the sides of coin.
-# TODO: Set the coin toss and sidename - ternary operator.
+# Set the sides of coin.
+sides = ['heads', 'tails']
+
+# Set the coin toss and sidename - ternary operator.
+toss = random.randint(0, 1) # 0 is heads, 1 is tails
+toss = heads if toss == 0 else tails
+
 # TODO: Use while loop to give two guesses and check if input is a proper name.
