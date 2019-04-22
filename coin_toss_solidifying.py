@@ -24,8 +24,10 @@ guess = ''
 
 # TODO: Use while loop to give two guesses and check if input is a proper name.
 while guess not in sides or number != 2:
+    logging.info('Enter the loop.')
     print('Guess, is it "heads" or "tails"?')
     guess = input()
+    logging.info('Guess is {}'.format(guess))
     if guess not in sides:
         continue
     print('You got it!') if guess == toss else print('Nope!')
