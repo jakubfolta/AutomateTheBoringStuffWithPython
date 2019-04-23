@@ -4,7 +4,7 @@
 two guesses(simple game). The program has several bugs.\
 Find bugs that keep the program from working correctly.'''
 
-# TODO: Import essential modules.
+# Import essential modules.
 import random
 import logging
 logging.basicConfig(level = logging.INFO, format = '%(levelname)s, %(message)s')
