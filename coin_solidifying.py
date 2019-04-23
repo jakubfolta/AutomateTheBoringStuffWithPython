@@ -19,3 +19,5 @@ toss = random.randint(0, 1) # 0 is heads, 1 is tails.
 toss = 'heads' if toss == 0 else 'tails'
 
 # TODO: Use while loop to check if user guess is right and act appropriately.
+while guess not in sides and number != 2:
+    
