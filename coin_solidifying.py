@@ -2,13 +2,13 @@
 
 '''coin_solidifying.py - Simple coin toss game, the player has\
 two guesses(simple game). The program has several bugs.\
-Find bugs that keep the program from working correctly.'''
+Find bugs that keep the program from working correctly.---Finished'''
 
 # Import essential modules.
 import random
 import logging
 logging.basicConfig(level = logging.INFO, format = '%(levelname)s, %(message)s')
-#logging.disable(logging.CRITICAL)
+logging.disable(logging.CRITICAL)
 
 # Set essential variables: guess, number, toss, sides.
 guess = ''
@@ -35,4 +35,4 @@ while guess not in sides or number != 2:
     logging.info('Number is {}.'.format(number))
 else:
     logging.info('Out of loop, not guessed.')
-    print('Try again if you dare to.')
+    print('You\'re lost! Try again if you dare to.')
