@@ -13,16 +13,25 @@ logging.basicConfig(level = logging.INFO, format = '%(levelname)s, %(message)s')
 # Set essential variables: guess, number, toss, sides.
 guess = ''
 number = 0
+sides = ['heads', 'tails']
 toss = random.randint(0, 1) # 0 is heads, 1 is tails.
 
 # Set toss to one of two coin sides.
 toss = 'heads' if toss == 0 else 'tails'
-
-# TODO: Use while loop to check if user guess is right and act appropriately.
+logging.info('Toss is {}.'.format(toss))
+# Use while loop to check if user guess is right and act appropriately.
 while guess not in sides and number != 2:
     print('Guess, "heads" or "tails"')
     guess = input()
-    if guess not in sides: continue
+    logging.info('Guess is {}.'.format(guess))
+    if guess not in sides:
+        logging.info('Guess not in sides.')
+        continue
     print('You got it!') if guess == toss else print('Nope.')
-    if guess == toss: break
-    number
+    if guess == toss:
+        logging.info('Guess is equal to toss!')
+        break
+    number += 1
+else:
+    logging.info('Out of loop, not guessed.')
+    print('Try again if you dare to.')
