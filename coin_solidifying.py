@@ -20,4 +20,4 @@ toss = 'heads' if toss == 0 else 'tails'
 
 # TODO: Use while loop to check if user guess is right and act appropriately.
 while guess not in sides and number != 2:
-    
+    print('Guess, "heads" or "tails"')
