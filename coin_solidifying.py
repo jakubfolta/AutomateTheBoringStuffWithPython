@@ -20,7 +20,7 @@ toss = random.randint(0, 1) # 0 is heads, 1 is tails.
 toss = 'heads' if toss == 0 else 'tails'
 logging.info('Toss is {}.'.format(toss))
 # Use while loop to check if user guess is right and act appropriately.
-while guess not in sides and number != 2:
+while guess not in sides or number != 2:
     print('Guess, "heads" or "tails"')
     guess = input()
     logging.info('Guess is {}.'.format(guess))
@@ -32,6 +32,7 @@ while guess not in sides and number != 2:
         logging.info('Guess is equal to toss!')
         break
     number += 1
+    logging.info('Number is {}.'.format(number))
 else:
     logging.info('Out of loop, not guessed.')
     print('Try again if you dare to.')
