@@ -23,7 +23,17 @@ import bs4
 #
 # play_file.close()
 
-res = requests.get('http://nostarch.com')
-res.raise_for_status()
-no_starch_soup = bs4.BeautifulSoup(res.text)
-print(type(no_starch_soup))
+# res = requests.get('http://nostarch.com')
+# res.raise_for_status()
+# no_starch_soup = bs4.BeautifulSoup(res.text)
+# print(type(no_starch_soup))
+
+example_file = open('example.html')
+example_soup = bs4.BeautifulSoup(example_file.read(), features ="html.parser")
+elems = example_soup.select('#author')
+print(type(elems))
+print(len(elems))
+print(type(elems[0]))
+print(elems[0].getText())
+print(str(elems[0]))
+print(elems[0].attrs)
