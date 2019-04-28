@@ -9,4 +9,7 @@ import requests
 # print(res.text[:250])
 
 res = requests.get('http://inventwithpython.com/page_that_does_not_exists')
-res.raise_for_status()
+try:
+    res.raise_for_status()
+except Exception as exc:
+    print('There was a problem: {}'.format(exc))
