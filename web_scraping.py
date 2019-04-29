@@ -37,3 +37,6 @@ print(type(elems[0]))
 print(elems[0].getText())
 print(str(elems[0]))
 print(elems[0].attrs)
+
+p_elems = example_soup.select('p')
+print(str(p_elems[0]))
