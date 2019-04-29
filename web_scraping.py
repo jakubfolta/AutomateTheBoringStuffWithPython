@@ -47,3 +47,8 @@ print(str(p_elems[2]))
 print(p_elems[2].getText())
 print(len(p_elems))
 print(p_elems[1].attrs)
+
+soup = bs4.BeautifulSoup(open('example.html'), features ="html.parser")
+span_elem = soup.select('span')[0]
+print(str(span_elem))
+print(span_elem.get('id'))
