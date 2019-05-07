@@ -2,7 +2,7 @@ import webbrowser
 #webbrowser.open('http://inventwithpython.com/')
 import requests
 import bs4
-fsdf
+
 # res = requests.get('https://automatetheboringstuff.com/files/rj.txt')
 # print(type(res))
 # res.status_code == requests.codes.ok
