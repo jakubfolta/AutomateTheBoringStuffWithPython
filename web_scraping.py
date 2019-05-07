@@ -2,7 +2,7 @@ import webbrowser
 #webbrowser.open('http://inventwithpython.com/')
 import requests
 import bs4
-
+d
 # res = requests.get('https://automatetheboringstuff.com/files/rj.txt')
 # print(type(res))
 # res.status_code == requests.codes.ok
@@ -52,3 +52,4 @@ soup = bs4.BeautifulSoup(open('example.html'), features ="html.parser")
 span_elem = soup.select('span')[0]
 print(str(span_elem))
 print(span_elem.get('id'))
+print(span_elem.attrs)
